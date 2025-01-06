@@ -1,17 +1,8 @@
-// Toggle the navbar visibility with sliding animation
-document.getElementById('navbar-toggle').addEventListener('click', function () {
+// Toggle the navbar visibility on mobile
+document.getElementById('navbar-toggle').addEventListener('click', function() {
     const navbarItems = document.querySelector('.navbar-items');
-    if (navbarItems.classList.contains('show')) {
-        // Hide the navbar with a sliding animation
-        navbarItems.style.left = '-100%';
-        setTimeout(() => navbarItems.classList.remove('show'), 300); // Remove `show` class after animation
-    } else {
-        // Show the navbar with a sliding animation
-        navbarItems.classList.add('show');
-        navbarItems.style.left = '0';
-    }
+    navbarItems.classList.toggle('show');
 });
-
 
 
 
@@ -65,24 +56,6 @@ function scrollToIndex(index) {
 
 // // Initialize
 // updatePagination();
-
-
-
-
-
-
-// Change navbar background on scroll
-window.addEventListener('scroll', function () {
-    const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 0) {
-        navbar.classList.add('scrolled'); // Add the class when scrolling
-    } else {
-        navbar.classList.remove('scrolled'); // Remove the class when at the top
-    }
-});
-
-
-
 
 
 

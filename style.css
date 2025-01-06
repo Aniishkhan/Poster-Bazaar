@@ -263,6 +263,7 @@ h1 {
     background-color: #25D366;
     color: white;
     border: none;
+    white-space: nowrap;
     border-radius: 5px;
     padding: 10px 15px;
     cursor: pointer;
@@ -1027,7 +1028,7 @@ h1 span {
         margin-bottom: 10px;
     }
     .world-class {
-        width: 196px !important;
+        width: 180px !important;
     }
 }
 
