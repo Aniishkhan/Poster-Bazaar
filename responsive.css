@@ -42,19 +42,19 @@
 
     .list-items {
         flex-direction: column;
-        gap: 15px;
-        margin-top: 120px;
+        gap: 0px;
+        margin-top: 100px;
     }
 
     .dropdown {
         left: 0;
         width: 100%;
-        top: 32%;
+        top: 3%;
     }
 
     .service {
         top: 46%;
-        margin-top: -56px;
+        margin-top: -119px;
     }
 }
 

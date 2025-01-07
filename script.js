@@ -1,5 +1,5 @@
 // Toggle the navbar visibility on mobile
-document.getElementById('navbar-toggle').addEventListener('click', function() {
+document.getElementById('navbar-toggle').addEventListener('click', function () {
     const navbarItems = document.querySelector('.navbar-items');
     navbarItems.classList.toggle('show');
 });
@@ -69,8 +69,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const price = productCard.getAttribute('data-price'); // Get the product price
 
             // Get the product image URL
-            const image = productCard.getAttribute('data-image'); 
-            
+            const image = productCard.getAttribute('data-image');
+
             const productName = productCard.querySelector('h4').innerText; // Get product name
 
             // Construct the full image URL
