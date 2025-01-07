@@ -1096,6 +1096,7 @@ h1 span {
     font-weight: 700;
     margin-bottom: 20px;
     text-align: center;
+    color: #39ffee;
 }
 
 .title span {
@@ -1126,6 +1127,7 @@ h1 span {
     font-size: 1.2em;
     font-weight: 700;
     margin-bottom: 5px;
+    color: #b5aab5;
 }
 
 .feature-subtitle {
