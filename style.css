@@ -14,7 +14,7 @@ a {
 
 .navbar {
     position: fixed;
-    background-color:black;
+    background-color: black;
     top: -10px;
     left: 0;
     width: 100%;
@@ -53,10 +53,13 @@ a {
     display: flex;
     align-items: baseline;
 }
+
 /* Slide animation for navbar-items */
 .navbar-items {
-    left: -100%; /* Initially hidden */
-    transition: left 0.3s ease-in-out; /* Smooth slide effect */
+    left: -100%;
+    /* Initially hidden */
+    transition: left 0.3s ease-in-out;
+    /* Smooth slide effect */
 }
 
 /* When the navbar is visible */
@@ -135,7 +138,8 @@ li a:hover {
     font-size: 25px;
 }
 
-.search-bar:hover, .shopping-cart:hover {
+.search-bar:hover,
+.shopping-cart:hover {
     color: white;
 }
 
@@ -250,6 +254,7 @@ h1 {
 .rating {
     color: #00ff00;
 }
+
 .old-price {
     text-decoration: line-through;
     color: #999;
@@ -259,7 +264,8 @@ h1 {
     font-size: 1.1em;
     color: #000;
 }
-.whatsapp-btn {
+
+.whatsapp-btn, .whatsapp-btn-click {
     background-color: #25D366;
     color: white;
     border: none;
@@ -449,7 +455,7 @@ h1 {
 }
 
 .controls h1 {
-    color: #000;
+    color: #00ff00;
     font-family: 'Font Awesome 5 Free';
     text-align: justify;
 }
@@ -458,15 +464,17 @@ h1 {
     font-size: 18px;
     font-family: monospace;
     font-weight: 600;
+    color: #fff;
 }
 
 .controls p {
     font-size: 11px;
     line-height: 1;
+    color: #5a5a5a;
 }
 
 .controls p a {
-    color: black;
+    color: #808080;
     font-weight: 600;
 }
 
@@ -664,7 +672,7 @@ h1 {
     margin-top: 37px;
     border: 1px solid black;
     color: #fff;
-    background: black;
+    background: #007bff;
     width: 300px;
     text-align: center;
     border-radius: 35px;
@@ -1017,20 +1025,7 @@ h1 span {
     height: 120px;
 }
 
-@media (max-width: 576px) {
-    .feature-main {
-        flex-direction: column;
-        width: 400px;
-    }
 
-    .feature-respo-main {
-        gap: 12px;
-        margin-bottom: 10px;
-    }
-    .world-class {
-        width: 160px !important;
-    }
-}
 
 .feature {
     background-color: #1a1a1a;

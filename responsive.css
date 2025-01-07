@@ -335,3 +335,38 @@
 }
 
 
+@media (max-width: 576px) {
+    .feature-main {
+        flex-direction: column;
+        width: 400px;
+    }
+
+    .feature-respo-main {
+        gap: 12px;
+        margin-bottom: 10px;
+    }
+
+    .world-class {
+        width: 160px !important;
+        flex-direction: column;
+    }
+
+    .world-class img {
+        width: 70px;
+    }
+
+    .feature p {
+        color: #fff;
+        margin-left: 10px;
+        margin-top: 21px;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    .feature i {
+        margin-left: -2px;
+        font-size: 34px;
+        margin-top: -53px;
+    }
+
+}
