@@ -67,15 +67,21 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', function () {
             const productCard = this.closest('.product-card'); // Get the parent product card
             const price = productCard.getAttribute('data-price'); // Get the product price
-            const image = productCard.getAttribute('data-image'); // Get the product image URL
+
+            // Get the product image URL
+            const image = productCard.getAttribute('data-image'); 
+            
             const productName = productCard.querySelector('h4').innerText; // Get product name
+
+            // Construct the full image URL
+            const imageURL = new URL(image, window.location.origin).href;
 
             // Create the WhatsApp message
             const whatsappMessage = `
 Hello, I am interested in purchasing the following product:
 - Product: ${productName}
 - Price: Rs ${price}
-- Image: ${image}
+- Image Link: ${imageURL}
 
 Please provide further details.`;
 
@@ -91,3 +97,4 @@ Please provide further details.`;
         });
     });
 });
+
