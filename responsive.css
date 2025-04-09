@@ -15,9 +15,31 @@
     }
 
     .logo {
-        margin-left: 97px;
+        margin-left: 67px;
         width: 147px;
     }
+
+    .whatsapp-btn-click {
+        padding: 7px 12px;
+        font-size: 11px;
+        margin: 1px 0;
+    }
+
+    .product-card img {
+        width: 100%;
+        height: 150px;
+    }
+    .product-card p {
+        margin: 2px 0;
+        font-size: 12px;
+    } 
+    .user-icon {
+        color: rgb(191, 190, 190);
+        position: absolute;
+        margin-top: 10px;
+        margin-left: -20px;
+    }
+
 
 
     .navbar-toggle {
@@ -30,7 +52,7 @@
         z-index: 1001;
     }
 
-    
+
 
     .navbar-toggle:hover {
         color: #fff;
@@ -61,25 +83,29 @@
 
 @media (max-width: 1200px) {
     .product-card {
-        width:300px;
+        width: 300px;
     }
 }
+
 @media (max-width: 992px) {
     .product-item {
         width: 250%;
     }
 }
+
 @media (max-width: 768px) {
     .product-item {
         width: 190px;
     }
 }
+
 @media (max-width: 576px) {
     .product-card {
         width: 150px;
         margin-right: 10px;
     }
-    
+
+
     .product-card h4 {
         font-size: 1em;
         text-align: justify;
@@ -90,7 +116,7 @@
         margin: 10px 0;
     }
 
-    
+
     .price {
         font-size: 16px;
     }
@@ -101,6 +127,15 @@
         text-align: justify;
     }
 }
+
+/* @media (min-width: 300px) {
+
+    .logo {
+        margin-left: 97px;
+        width: 93px;
+    }
+
+} */
 
 
 
@@ -236,7 +271,7 @@
 /* Responsive Layout for Shipping Section */
 @media (max-width: 768px) {
     .shipping {
-        
+
         gap: 15px;
     }
 
@@ -260,7 +295,7 @@
         text-align: center;
     }
 
-    .breakdown-section  {
+    .breakdown-section {
         flex-direction: column;
         align-items: flex-start;
     }
@@ -268,6 +303,7 @@
     .rating-bar {
         align-items: flex-start;
     }
+
     .write-review-btn {
         width: 100%;
         margin-top: 15px;
@@ -281,6 +317,7 @@
 
 /* Reduce Font Sizes for Smaller Screens */
 @media (max-width: 576px) {
+
     .controls h1,
     .controls h3,
     .controls h4,
@@ -292,10 +329,11 @@
     .order-details p {
         font-size: 14px;
     }
+
     .reviwes {
         flex-direction: column;
     }
-   
+
 }
 
 /* Adjust Details Section */
@@ -304,15 +342,15 @@
         font-size: 18px;
     }
 
-  
+
     .dropdown-icon {
         margin-left: 241px;
     }
-    
+
     .dropdown-icon2 {
         margin-left: 151px;
     }
-    
+
     .dropdown-icon3 {
         margin-left: 208px;
     }
