@@ -27,7 +27,7 @@
 
     .product-card img {
         width: 100%;
-        height: 150px;
+        height: 150px !important;
     }
     .product-card p {
         margin: 2px 0;
@@ -50,6 +50,7 @@
         margin-top: -8px;
         font-size: 35px;
         z-index: 1001;
+        color: #316832;
     }
 
 
@@ -80,7 +81,12 @@
     }
 }
 
-
+@media (min-width: 359px) and (max-width:430px) {
+    .logo {
+        margin-left: 44px;
+        width: 139px;
+    }   
+}
 @media (max-width: 1200px) {
     .product-card {
         width: 300px;
@@ -101,7 +107,7 @@
 
 @media (max-width: 576px) {
     .product-card {
-        width: 150px;
+        width: 150px !important;
         margin-right: 10px;
     }
 
