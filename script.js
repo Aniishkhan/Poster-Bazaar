@@ -1,8 +1,47 @@
-// Toggle the navbar visibility on mobile
-document.getElementById('navbar-toggle').addEventListener('click', function () {
-    const navbarItems = document.querySelector('.navbar-items');
-    navbarItems.classList.toggle('show');
+
+
+
+        // light & dark mode swich js
+        const toggleButton = document.getElementById('modeToggle');
+        const themeLink = document.getElementById('themeStylesheet');
+        const modeIcon = document.getElementById('modeIcon');
+
+       
+        let isDarkMode = localStorage.getItem('theme') === 'dark';
+        themeLink.href = isDarkMode ? './styleeee.css' : './styleeee2.css';
+        modeIcon.textContent = isDarkMode ? '🌙' : '🌞'; 
+
+        toggleButton.addEventListener('click', () => {
+            if (isDarkMode) {
+                themeLink.href = './styleeee2.css';
+                localStorage.setItem('theme', 'light');
+                modeIcon.textContent = '🌞'; // sun for light
+            } else {
+                themeLink.href = './styleeee.css';
+                localStorage.setItem('theme', 'dark');
+                modeIcon.textContent = '🌙'; // moon for dark
+            }
+            isDarkMode = !isDarkMode;
+        });
+
+
+
+
+
+const listItems = document.querySelectorAll('.navigation ul li');
+const indicator = document.querySelector('.indicator');
+
+listItems.forEach((li, index) => {
+  li.addEventListener('click', function () {
+    listItems.forEach(item => item.classList.remove('active')); // Remove 'active' from all items
+    li.classList.add('active'); // Add 'active' to the clicked item
+
+    // Calculate indicator position
+    const indicatorPosition = index * 70; // 70px is the width of each menu item
+    indicator.style.transform = `translateX(${indicatorPosition}px)`; // Move indicator
+  });
 });
+
 
 
 
@@ -101,4 +140,106 @@ Please provide further details.`;
 
 
 
+// detail page open
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navItems = document.querySelector(".nav-items");
+    menuToggle.addEventListener("click", function () {
+        navItems.classList.toggle("active");
+    });
+});
 
+async function fetchNewBooks() {
+    try {
+        const response = await fetch('/getNewBooks');  
+        const data = await response.json();
+        console.log("Fetched Books:", data);
+
+        const newBooksContainer = document.getElementById("newBooksContainer");
+        newBooksContainer.innerHTML = "";
+
+        data.books.forEach(book => {
+            if (!book || !book._id || !book.title) {
+                console.warn("Skipping invalid book:", book);
+                return;
+            }
+
+            const bookCard = document.createElement("div");
+            bookCard.classList.add("book-card");
+
+            bookCard.innerHTML = `
+                <img class="book-image" src="${book.bookImage || 'default.jpg'}" alt="${book.title}">
+                <div class="rating-overlay">
+                    ${generateStars(book.averageRating)}
+                    <span class="avg-text">(${book.averageRating || 0} ⭐)</span>
+                </div>
+                <div class="book-title">${book.title}</div>
+                <div class="book-author">by ${book.author || 'Unknown'}</div>
+                <div class="book-price">
+                    ₹${book.price || 0} <span class="offer-price">₹${book.offerPrice || book.price || 0}</span>
+                </div>
+                <button class="add-cart">Add to Cart</button>
+            `;
+
+            bookCard.querySelector(".book-image").addEventListener("click", () => {
+                window.location.href = `/newbookDetelies.html?id=${book._id}`;
+            });
+
+            bookCard.querySelector(".add-cart").addEventListener("click", (e) => {
+                e.stopPropagation();
+                addToCart(book._id, book.title, book.bookImage, book.price);
+                alert("Book added to cart!");
+            });
+
+            newBooksContainer.appendChild(bookCard);
+        });
+
+    } catch (err) {
+        console.error("Error fetching books:", err);
+        alert("Failed to load new books.");
+    }
+}
+
+function generateStars(rating) {
+    rating = parseFloat(rating) || 0;
+    let stars = '';
+    for (let i = 1; i <= 5; i++) {
+        if (i <= rating) {
+            stars += `<i class="fas fa-star" style="color: gold;"></i>`;
+        } else if (i - rating < 1) {
+            stars += `<i class="fas fa-star-half-alt" style="color: gold;"></i>`;
+        } else {
+            stars += `<i class="far fa-star" style="color: gold;"></i>`;
+        }
+    }
+    return stars;
+}
+
+function addToCart(id, title, image, price) {
+    let cart = JSON.parse(localStorage.getItem("cart")) || [];
+    let existingItem = cart.find(item => item.id === id);
+
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({ id, title, image, price, quantity: 1 });
+    }
+
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartNotification();
+}
+
+function updateCartNotification() {
+    const cartBadge = document.querySelector("sup#cart-count");
+    if (!cartBadge) return;
+    let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
+    const totalQuantity = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+    cartBadge.textContent = totalQuantity;
+    cartBadge.style.display = totalQuantity === 0 ? "none" : "inline-block";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetchNewBooks();
+    updateCartNotification();
+});
+  

@@ -4,15 +4,15 @@ import mongoose from 'mongoose';
 const productSchema = mongoose.Schema({
     productName: {
         type: String,
-        required: true
+        required: false
     },
     price: {
         type: Number,
-        required: true,
+        required: false,
     },
     offerOnPrice: {
         type: Number,
-        required: true
+        required: false
     },
     category: {
         type: String,
@@ -45,3 +45,5 @@ const productSchema = mongoose.Schema({
 const Product = mongoose.model('ProductSchema', productSchema);
 
 export { Product };
+
+

@@ -1,0 +1,30 @@
+<script>
+    document.addEventListener("DOMContentLoaded", async () => {
+      try {
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+        if (!id) return console.log("❌ No ID in URL");
+    
+        const res = await fetch(`/api/get/product/${id}`);
+        const data = await res.json();
+    
+        const product = data.productData; // ✅ yahi fix tha
+        if (!product) return console.log("❌ Product not found");
+    
+        const img = document.getElementById("productImage");
+        if (img && product.productImage) {
+          img.src = `/uploads/${product.productImage}`;
+          img.alt = "Product Image";
+        } else {
+          console.log("❌ Image element not found");
+        }
+    
+      } catch (err) {
+        console.error("❌ Error:", err);
+      }
+    });
+    </script>
+    
+
+
+    <img id="productImage"  data-product-id="productImage"  alt="product-Image" style="width:300px; height:auto;" />

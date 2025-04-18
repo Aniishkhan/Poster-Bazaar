@@ -4,138 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>NeonPlannet</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
-    <!-- <<<<---bootstrap link->>>>  -->
+    <!-- <<<<---bootstrap link->>>>   -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-xxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- <<<<---icon-font->>>>  -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- <<<<<<<<<<<<<css>>>>>>>>>> -->
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./responsive.css">
-    <style>
-        .row {
-            margin-top: 80px;
-        }
+    <link id="themeStylesheet" rel="stylesheet" href="./styleeee2.css">
+    <link rel="stylesheet" href="responsive.css">
+    
 
-        .email,
-        .password {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
 
-        form input {
-            width: 300px;
-        }
+    
+    
 
-        form label {
-            font-size: 26px;
-            margin-left: -231px;
-            color: #fff;
-        }
 
-        .password label {
-            font-size: 26px;
-            margin-left: -190px;
-            color: #fff;
-            margin-top: 12px;
-        }
-
-        p {
-            color: #dfdfdf;
-            font-size: 14px;
-            margin-top: 10px;
-        }
-
-        a {
-            text-align: center;
-        }
-
-        button {
-            margin: auto;
-            /* justify-content: center; */
-            display: flex;
-            padding: 10px 39px;
-            border-radius: 35px;
-            border: none;
-            background: #00ff00;
-        }
-    </style>
 </head>
 
 <body>
+
 
     <!-- <<<<<<<<<<<<------Navbar->>>>>>>> -->
     <div class="container-fluid">
         <div class="row">
             <div class="navbar">
                 <div class="container">
+                    <button id="modeToggle">
+                        <span id="modeIcon">🌞</span>
+                    </button>
                     <div class="logo">
-                        <img src="./img/neon-planner-logo-removebg-preview.png" alt="">
+                        <!-- <img src="img/neon-planner-logo-removebg-preview.png" alt=""> -->
+                        <img src="./img/logo_techbro-removebg-preview.png" alt="">
                     </div>
                     <div class="navbar-items">
                         <ul class="list-items">
                             <li><a href="index.html">Home</a></li>
                             <li>
-                                <a href="product1.html">Customize
+                                <a href="Poster-custimzer.html">Custom
                             </li>
                             <li>
-                                Neon Sign <i class="fa navcticn fa-angle-down" aria-hidden="true"></i>
+                                Make Posts <i class="fa navcticn fa-angle-down" aria-hidden="true"></i>
                                 <ul class="dropdown service">
-                                    <li><a href="startup.html">Business Specific</a></li>
-                                    <li><a href="companyIn.html">Home Decor</a></li>
-                                    <li><a href="Registration.html">Event & Celebrations</a></li>
-                                    <li><a href="GSTworks.html">Inspirational & Quotes</a></li>
-                                    <li><a href="Taxfilling.html">Custom Design</a></li>
-                                    <li><a href="certification.html">Seasonal Themes</a></li>
-                                    <li><a href="mandcompli.html"> Hobbies & Interests</a></li>
-                                    <li><a href="annualCom.html">Outdoor & Commercial</a></li>
-                                    <li><a href="website.html">Artistic & Abstract</a></li>
-                                    <li><a href="website.html">Religious & Cultural</a></li>
+                                    <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
+                                    <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
+                                    <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
+                                    <li><a href="#inspirationalQuotes">Month End Offer</a></li>
+                                    <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
+                                    <li><a href="#seasonalTheame">Weekend Offers</a></li>
+                                    <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
+                                    <li><a href="#artistAndAbstract">Business Anniversary</a></li>
+                                    <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
 
                                 </ul>
+                                <li><a href="AboutUs.html">About</a></li>
                             </li>
-                            
+                          
+                            <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
+                            <li><a href="#" id="adminNav" style="display: none;">Admin</a></li>
                         </ul>
 
                     </div>
                     <div class="btn">
-                        <!-- Search Bar -->
-                        <div class="search-bar">
-                            <i class="fas fa-search" onkeyup="filterProjects(this.value)"></i>
-                        </div>
-                        <div class="shopping-cart">
+                        <!-- <div class="shopping-cart">
                             <i class="fas fa-shopping-cart"></i>
+                        </div> -->
+                        <!-- <p id="logoutBtn">Logout</p> -->
+
+                        <div class="auth-signup">
+                            <a href="./auth-signin.html"><i class="fas fa-user user-icon"></i></a>
                         </div>
-                    </div>
-                    <!-- Mobile Toggle Button -->
-                    <div class="navbar-toggle" id="navbar-toggle">
-                        <i class="fas fa-bars"></i>
+                        <div id="searchBtn">
+                            <input class="form-control me-2" id="search" type="search" placeholder="Search"
+                                aria-label="Search">
+                            <button id="searchBtnn">
+                                <i class="fas fa-search"></i>
+                            </button>
+
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
+    <div class="navigation">
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    <span class="icon">
+                        <i class="fa fa-home"></i>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="profile-dropdown">
+                <a href="auth-signup.html">
+                    <span class="icon"><i class="fa fa-user"></i></span>
+                    <span class="text">Sign Up</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <a href="#">View Profile</a>
+                    <a href="#">Edit Profile</a>
+                    <a href="#">Settings</a>
+                </ul>
+            </li>
+            <li>
+                <a href="Poster-custimzer.html">
+                    <span class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </span>
+                    <span class="text">Custom</span>
+                </a>
+            </li>
+            <li>
+                <a href="AboutUs.html">
+                    <span class="icon">
+                        <i class="fas fa-info-circle"></i>
+
+                    </span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fa fa-gear"></i>
+                    </span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
+
+            <div class="indicator"></div>
+        </ul>
+    </div>
+
+    <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
 
 
-    <div class="container">
-        <div class="row">
+    <div class="auth-container">
+        <div class="auth-row">
             <h1>Login</h1>
             <form action="" id="login-form">
-                <div class="email">
+                <div class="auth-email">
                     <label for="">Email</label>
                     <input type="text" id="email">
                 </div>
@@ -208,7 +233,7 @@
                                 </div>
                             </div>
                             <div class="col-sm-3 secution">
-                                <img src="/img/neon-planner-logo-removebg-preview.png" alt="">
+                                <img src="./img/logo_techbro-removebg-preview.png" alt="">
                                 <div class="fsocial">
                                     <ul>
                                         <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
@@ -227,8 +252,9 @@
                                             </a></li>
                                     </ul>
                                 </div>
-                                <div class="pay-now-btn">
-                                    <a href="#" class="pay-now-a">Pay Now</a>
+                                <div class="contactus">
+                                    <p><i class="fas fa-phone me-2 text-teal"></i> <a href="tel:+917597722920">+917597722920</a></p>
+                                  <p><i class="fas fa-envelope me-2 text-teal"></i> <a href="mailto:info@techbro24.com">info@techbro24.com</a></p>
                                 </div>
                             </div>
                         </div>
@@ -243,7 +269,7 @@
             <div class="footer-end">
                 <p>Copyright ©
                     <label for="" class="Footer-span">2024</label>
-                    <b>Neon Planet</b>
+                  
                     . All Rights Reserved. | Design and Developed By
                     <a href="">TechBro24</a>
                 </p>
@@ -259,7 +285,9 @@
     <!-- api -->
      <script src="./api/auth-sigin-signup.api.js"></script>
 
-
+<script src="script.js"></script>
 </body>
 
 </html>
+
+

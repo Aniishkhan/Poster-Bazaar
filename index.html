@@ -16,13 +16,18 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
 
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-xxx" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- <<<<---icon-font->>>>  -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- <<<<<<<<<<<<<css>>>>>>>>>> -->
-    <link rel="stylesheet" href="./style.css">
+    <link id="themeStylesheet" rel="stylesheet" href="./styleeee2.css">
     <link rel="stylesheet" href="responsive.css">
+
 
 </head>
 
@@ -34,31 +39,36 @@
         <div class="row">
             <div class="navbar">
                 <div class="container">
+                    <button id="modeToggle">
+                        <span id="modeIcon">🌞</span>
+                    </button>
                     <div class="logo">
-                        <img src="img/neon-planner-logo-removebg-preview.png" alt="">
+                        <!-- <img src="img/neon-planner-logo-removebg-preview.png" alt=""> -->
+                        <img src="./img/logo_techbro-removebg-preview.png" alt="">
                     </div>
                     <div class="navbar-items">
                         <ul class="list-items">
                             <li><a href="index.html">Home</a></li>
                             <li>
-                                <a href="product1.html">Customize
+                                <a href="Poster-custimzer.html">Custom
                             </li>
                             <li>
-                                Neon Sign <i class="fa navcticn fa-angle-down" aria-hidden="true"></i>
+                                Make Posts <i class="fa navcticn fa-angle-down" aria-hidden="true"></i>
                                 <ul class="dropdown service">
-                                    <li><a href="#product-slider-wrapper22">Business Specific</a></li>
-                                    <li><a href="#product-slider-wrapper11">Home Decor</a></li>
-                                    <li><a href="#product-slider-wrapper33">Event & Celebrations</a></li>
-                                    <li><a href="#inspirationalQuotes">Inspirational & Quotes</a></li>
-                                    <li><a href="#product-slider-wrapper44">Custom Design</a></li>
-                                    <li><a href="#seasonalTheame">Seasonal Themes</a></li>
-                                    <li><a href="#product-slider-wrapper"> Hobbies & Interests</a></li>
-                                    <li><a href="#outdoorAndCommercial">Outdoor & Commercial</a></li>
-                                    <li><a href="#artistAndAbstract">Artistic & Abstract</a></li>
-                                    <li><a href="#ReligiousCultural">Religious & Cultural</a></li>
+                                    <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
+                                    <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
+                                    <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
+                                    <li><a href="#inspirationalQuotes">Month End Offer</a></li>
+                                    <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
+                                    <li><a href="#seasonalTheame">Weekend Offers</a></li>
+                                    <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
+                                    <li><a href="#artistAndAbstract">Business Anniversary</a></li>
+                                    <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
 
                                 </ul>
+                                <li><a href="AboutUs.html">About</a></li>
                             </li>
+                          
                             <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
                             <li><a href="#" id="adminNav" style="display: none;">Admin</a></li>
                         </ul>
@@ -70,139 +80,205 @@
                         </div> -->
                         <!-- <p id="logoutBtn">Logout</p> -->
 
-                        <div>
+                        <div class="auth-signup">
                             <a href="./auth-signin.html"><i class="fas fa-user user-icon"></i></a>
                         </div>
                         <div id="searchBtn">
                             <input class="form-control me-2" id="search" type="search" placeholder="Search"
-                                aria-label="Search" style="display: block;">
+                                aria-label="Search">
                             <button id="searchBtnn">
                                 <i class="fas fa-search"></i>
                             </button>
 
                         </div>
                     </div>
-                    <!-- Mobile Toggle Button -->
-                    <div class="navbar-toggle" id="navbar-toggle">
-                        <i class="fas fa-bars"></i>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
+    <div class="navigation">
+        <ul>
+            <li class="active">
+                <a href="index.html">
+                    <span class="icon">
+                        <i class="fa fa-home"></i>
+                    </span>
+                    <span class="text">Home</span>
+                </a>
+            </li>
+            <li class="profile-dropdown">
+                <a href="auth-signup.html">
+                    <span class="icon"><i class="fa fa-user"></i></span>
+                    <span class="text">Sign Up</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <a href="#">View Profile</a>
+                    <a href="#">Edit Profile</a>
+                    <a href="#">Settings</a>
+                </ul>
+            </li>
+            <li>
+                <a href="Poster-custimzer.html">
+                    <span class="icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </span>
+                    <span class="text">Custom</span>
+                </a>
+            </li>
+            <li>
+                <a href="AboutUs.html">
+                    <span class="icon">
+                        <i class="fas fa-info-circle"></i>
 
-    <!-- <<<<<<<<<<<<------mainbox->>>>>>>> -->
-    <!-- Hobbies and intrest  -->
-    <div class="main">
-        <div class="product-slider-section">
-            <div class="slider-container">
-                <h1 class="slider-header"> 𝓑𝓮𝓼𝓽 𝓢𝓮𝓵𝓵𝓮𝓻 𝓟𝓻𝓸𝓭𝓾𝓬𝓽𝓼</h1>
-                <div class="product-slider-wrapper" id="product-slider-wrapper">
-                    <!-- Product Cards -->
-                    <a href="product1.html">
-                        <div class="product-card">
-                            <img src="img/Bed-Room.jpeg" alt="Product 1">
-                            <h4>Neon Sign Board</h4>
-                            <div class="rating">
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <i class="fas fa-star">
-                                </i>
-                                <span>
-                                    (89)
-                                </span>
-                            </div>
-                            <p class="old-price">
-                                Rs. 1,699.00
-                            </p>
-                            <p class="price">
-                                From Rs. 1,049.00
-                            </p>
-                            <button class="whatsapp-btn-click">click for customizations</button>
-                        </div>
-                    </a>
+                    </span>
+                    <span class="text">About</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon">
+                        <i class="fa fa-gear"></i>
+                    </span>
+                    <span class="text">Settings</span>
+                </a>
+            </li>
 
-                </div>
+            <div class="indicator"></div>
+        </ul>
+    </div>
 
-                <!-- Pagination and Arrows -->
-                <!-- <div class="pagination-controls">
-                    <button class="arrow-btn" id="prev-btn">&lt;</button>
-                    <span id="pagination">1 / 5</span>
-                    <button class="arrow-btn" id="next-btn">&gt;</button>
-                </div> -->
-            </div>
+    <!-- hero section -->
+    <div class="hero">
+        <div class="hero-image">
+            <img src="img/banner1.avif" alt="Poster Customizer Banner">
+        </div>
+        <div class="hero-content">
+            <h1>Create Stunning Posters</h1>
+            <p>Upload images, customize designs, and download with ease.</p>
+            <a href="#get-started" class="cta-button">Get Started</a>
         </div>
     </div>
-    <!-- <<<<<<<<<<<<------mainboxEnd->>>>>>>> -->
 
+
+
+
+    <!-- <<<<<<<<<<<<------mainbox->>>>>>>> -->
+    <!-- Business specific -->
+    <div class="product-slider-section">
+        <div class="slider-container">
+            <div class="head-heading">
+                <h1 class="slider-header" id="pop"> Marketing & Advertising </h1>
+                <a href="Marketing & Advertising-viewAll.html">
+                    <p class="view-all-btn" id="pops">View all</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="product-slider-wrapper" id="product-slider-wrapper22">
+            <!-- Product Cards -->
+
+
+
+
+        </div>
+
+        <!-- Pagination and Arrows -->
+        <!-- <div class="pagination-controls">
+            <button class="arrow-btn" id="prev-btn">&lt;</button>
+                <span id="pagination">1 / 7</span>
+                <button class="arrow-btn" id="next-btn">&gt;</button>
+            </div> -->
+    </div>
+    </div>
+
+
+    <!-- Hobbies and intrest  -->
+    <div class="product-slider-section">
+        <div class="slider-container">
+            <div class="head-heading">
+                <h1 class="slider-header">Business Instagram Story</h1>
+                <a href="Business Instagram Story-ViewAll.html">
+                    <p class="view-all-btn"> View all</p>
+                </a>
+            </div>
+        </div>
+        <div class="product-slider-wrapper" id="product-slider-wrapper11">
+
+            <!-- Product Cards -->
+
+
+        </div>
+
+        <!-- Pagination and Arrows -->
+        <!-- <div class="pagination-controls">
+                <button class="arrow-btn" id="prev-btn">&lt;</button>
+                <span id="pagination">1 / 5</span>
+                <button class="arrow-btn" id="next-btn">&gt;</button>
+            </div> -->
+    </div>
+    </div>
+    <!-- <<<<<<<<<<<<------popartEnd->>>>>>>> -->
+
+    <!-- <<<<<<<<<<<<------neonwings->>>>>>>> -->
+
+
+
+    <!-- <<<<<<<<<<<<------neonwingsEnd->>>>>>>> -->
 
     <!-- <<<<<<<<<<<<whyneonplanner>>>> -->
     <div class="container">
         <div class="row">
-            <h1>Why <span>Neon Planet?</span></h1>
+            <h1>Why <span>TechBro24tool?</span></h1>
             <div class="features">
                 <div class="col-sm-12 feature-main">
                     <div class="col-sm-6 feature-respo-main">
                         <div class="feature world-class">
-                            <img src="img/why_bg_one.avif" alt="">
-                            <i class="fas fa-award"></i>
-                            <p>Two year warranty</p>
+                            <i class="fas fa-upload"></i>
+                            <p>Upload Unlimited Images</p>
                         </div>
                         <div class="feature world-class">
-                            <img src="img/why_bg_two.avif" alt="">
-                            <i class="fas fa-shipping-fast"></i>
-                            <p>Free + Fast shipping</p>
+                            <i class="fas fa-crop-alt"></i>
+                            <p>Auto Resize for Social Media</p>
                         </div>
                     </div>
                     <div class="col-sm-6 feature-respo-main">
                         <div class="feature world-class">
-                            <img src="img/why_bg_one.avif" alt="">
-                            <i class="fas fa-gem"></i>
-                            <p>Premium quality</p>
+                            <i class="fas fa-layer-group"></i>
+                            <p>Add Logo & Footer in One Click</p>
                         </div>
                         <div class="feature world-class">
-                            <img src="img/why_bg_three.avif" alt="">
-                            <i class="fas fa-bolt"></i>
-                            <p>Power-efficient</p>
+                            <i class="fas fa-magic"></i>
+                            <p>Ready-Made Templates</p>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-12 feature-main">
                     <div class="col-sm-6 feature-respo-main">
                         <div class="feature world-class">
-                            <img src="img/why_bg_one.avif" alt="">
-                            <i class="fas fa-hand-holding-heart"></i>
-                            <p>World-class craftsmanship</p>
+                            <i class="fas fa-bolt"></i>
+                            <p>Super Fast Rendering</p>
                         </div>
                         <div class="feature world-class">
-                            <img src="img/why_bg_two.avif" alt="">
-                            <i class="fas fa-pencil-alt"></i>
-                            <p>Easy customizations</p>
+                            <i class="fas fa-mobile-alt"></i>
+                            <p>Mobile-Friendly Editor</p>
                         </div>
                     </div>
                     <div class="col-sm-6 feature-respo-main">
                         <div class="feature world-class">
-                            <img src="img/why_bg_one.avif" alt="">
-                            <i class="fas fa-users"></i>
-                            <p>100% customer satisfaction rate</p>
+                            <i class="fas fa-edit"></i>
+                            <p>Real-Time Preview & Edit</p>
                         </div>
                         <div class="feature world-class">
-                            <img src="img/why_bg_three.avif" alt="">
-                            <i class="fas fa-tools"></i>
-                            <p>2 Min Installation</p>
+                            <i class="fas fa-share-square"></i>
+                            <p>Direct Share to Instagram / Facebook</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
 
     <!-- <<<<<<<<<<<<<<<whyneonEnd>>>>>>>>>>>> -->
@@ -210,95 +286,7 @@
 
     <!-- <<<<<<<<<<<<------popart->>>>>>>> -->
     <!-- success Home Decor  -->
-    <div class="product-slider-section">
-        <div class="slider-container">
-            <h1 class="slider-header" id="pop">Home Decor</h1>
-            <div class="product-slider-wrapper" id="product-slider-wrapper11">
-                <!-- Product Cards -->
-                <div class="product-card ">
-                    <img src="img/img7.jpg" alt="Product 1">
-                    <h4 id="h4Tag" class="product">Neon Art Sign</h4>
-                    <div class="rating">
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <span>
-                            (89)
-                        </span>
-                    </div>
-                    <p class="old-price">
-                        Rs. 1,699.00
-                    </p>
-                    <p class="price">
-                        From Rs. 1,049.00
-                    </p>
-                </div>
-            </div>
 
-            <!-- Pagination and Arrows -->
-            <!-- <div class="pagination-controls">
-                <button class="arrow-btn" id="prev-btn">&lt;</button>
-                <span id="pagination">1 / 5</span>
-                <button class="arrow-btn" id="next-btn">&gt;</button>
-            </div> -->
-        </div>
-    </div>
-    <!-- <<<<<<<<<<<<------popartEnd->>>>>>>> -->
-
-    <!-- <<<<<<<<<<<<------neonwings->>>>>>>> -->
-
-
-    <!-- Business specific -->
-    <div class="product-slider-section">
-        <div class="slider-container">
-            <h1 class="slider-header"> Business Specific </h1>
-            <div class="product-slider-wrapper" id="product-slider-wrapper22">
-                <!-- Product Cards -->
-                <div class="product-card">
-                    <img src="img/picture1.webp" alt="Product 1">
-                    <h4>Neon Art Sign</h4>
-                    <div class="rating">
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <span>
-                            (89)
-                        </span>
-                    </div>
-                    <p class="old-price">
-                        Rs. 1,699.00
-                    </p>
-                    <p class="price">
-                        From Rs. 1,049.00
-                    </p>
-                </div>
-
-
-            </div>
-
-            <!-- Pagination and Arrows -->
-            <!-- <div class="pagination-controls">
-                <button class="arrow-btn" id="prev-btn">&lt;</button>
-                <span id="pagination">1 / 7</span>
-                <button class="arrow-btn" id="next-btn">&gt;</button>
-            </div> -->
-        </div>
-    </div>
-    <!-- <<<<<<<<<<<<------neonwingsEnd->>>>>>>> -->
 
     <!-- <<<<<<<<<<<<------illusionlamps->>>>>>>> -->
 
@@ -306,34 +294,15 @@
     <div class="product-slider-section">
         <div class="slider-container">
             <!-- Succes Inspirational & Quotes" & Event & Celebrations -->
-            <h1 class="slider-header">Event & Celebrations</h1>
+            <div class="head-heading">
+                <h1 class="slider-header">Month End Sale</h1>
+                <a href="Month End Sale-ViewAll.html">
+                    <p class="view-all-btn">View all</p>
+                </a>
+            </div>
             <div class="product-slider-wrapper" id="product-slider-wrapper33">
                 <!-- Product Cards -->
-                <div class="product-card">
-                    <img src="img/picture1.webp" alt="Product 1">
-                    <h4>Neon Art Sign</h4>
-                    <div class="rating">
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <span>
-                            (89)
-                        </span>
-                    </div>
-                    <p class="old-price">
-                        Rs. 1,699.00
-                    </p>
-                    <p class="price">
-                        From Rs. 1,049.00
-                    </p>
-                </div>
+
 
             </div>
 
@@ -351,61 +320,43 @@
 
     <!-- <<<<<<<<<<<<------mostadvancedlight->>>>>>>> -->
 
-    <div class="container">
-        <div class="title">
-            World's Most Advanced
-            <span>
-                NeonLight
-            </span>
-        </div>
-        <div class="feature-list">
-            <div class="feature-item mt">
-                <img alt="Color Changeable Icon" height="60" src="img/a-01.webp" width="60" />
-                <div class="feature-title">
-                    Color Changeable
-                </div>
-                <div class="feature-subtitle">
-                    Technology
-                </div>
+    <div class="container-fluid advance-light">
+        <div class="container">
+            <div class="title">
+                World’s Most Advanced <br>
+                <span>Social Media Image Tool</span>
             </div>
-            <div class="feature-item mt">
-                <img alt="Flow Modes Icon" height="60" src="img/a-02.webp" width="60" />
-                <div class="feature-title">
-                    200+
+            <div class="feature-list">
+                <div class="feature-item mt">
+                    <i class="fas fa-expand-arrows-alt fa-3x"></i>
+                    <div class="feature-title">Smart</div>
+                    <div class="feature-subtitle">Auto Resizing</div>
                 </div>
-                <div class="feature-subtitle">
-                    flow modes
+                <div class="feature-item mt">
+                    <i class="fas fa-layer-group fa-3x"></i>
+                    <div class="feature-title">20+</div>
+                    <div class="feature-subtitle">Pre-Made Layouts</div>
                 </div>
-            </div>
-            <div class="feature-item mt">
-                <img alt="Speed Control Icon" height="60" src="img/a-03.webp" width="60" />
-                <div class="feature-title">
-                    Complete
+                <div class="feature-item mt">
+                    <i class="fas fa-mouse-pointer fa-3x"></i>
+                    <div class="feature-title">Drag &</div>
+                    <div class="feature-subtitle">Drop Editor</div>
                 </div>
-                <div class="feature-subtitle">
-                    speed control
+                <div class="feature-item mt">
+                    <i class="fas fa-stamp fa-3x"></i>
+                    <div class="feature-title">Brand</div>
+                    <div class="feature-subtitle">Logo Integration</div>
                 </div>
-            </div>
-            <div class="feature-item mt">
-                <img alt="Smartphone Control Icon" height="60" src="img/a-04.webp" width="60" />
-                <div class="feature-title">
-                    Smartphone
-                </div>
-                <div class="feature-subtitle">
-                    app control
-                </div>
-            </div>
-            <div class="feature-item mt">
-                <img alt="Customizable Icon" height="60" src="img/a-05.webp" width="60" />
-                <div class="feature-title">
-                    Fully
-                </div>
-                <div class="feature-subtitle">
-                    customizable
+                <div class="feature-item mt">
+                    <i class="fas fa-eye fa-3x"></i>
+                    <div class="feature-title">Real-Time</div>
+                    <div class="feature-subtitle">Preview System</div>
                 </div>
             </div>
         </div>
     </div>
+
+
     <!-- <<<<<<<<<<<<------mostadvancedlightEnd->>>>>>>> -->
 
 
@@ -417,34 +368,15 @@
 
     <div class="product-slider-section">
         <div class="slider-container">
-            <h1 class="slider-header">Customs Desigens</h1>
+            <div class="head-heading">
+                <h1 class="slider-header">Month End Offer</h1>
+                <a href="Month End Offer-ViewAll.html">
+                    <p class="view-all-btn">View all</p>
+                </a>
+            </div>
             <div class="product-slider-wrapper" id="product-slider-wrapper44">
                 <!-- Product Cards -->
-                <div class="product-card">
-                    <img src="img/picture1.webp" alt="Product 1">
-                    <h4>Neon Art Sign</h4>
-                    <div class="rating">
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <i class="fas fa-star">
-                        </i>
-                        <span>
-                            (89)
-                        </span>
-                    </div>
-                    <p class="old-price">
-                        Rs. 1,699.00
-                    </p>
-                    <p class="price">
-                        From Rs. 1,049.00
-                    </p>
-                </div>
+
 
             </div>
 
@@ -463,7 +395,12 @@
     <!-- Seasonal Theamse -->
     <div class="product-slider-section">
         <div class="slider-container">
-            <h1 class="slider-header">Seasonal Theame</h1>
+            <div class="head-heading">
+                <h1 class="slider-header">Creative Collection</h1>
+                <a href="Creative Collection-ViewAll.html">
+                    <p class="view-all-btn">View all</p>
+                </a>
+            </div>
             <div class="product-slider-wrapper" id="seasonalTheame">
                 <!-- Product Cards -->
 
@@ -474,7 +411,12 @@
     <!-- Inspirational & Quotes -->
     <div class="product-slider-section">
         <div class="slider-container">
-            <h1 class="slider-header">Inspirational Quotes</h1>
+            <div class="head-heading">
+                <h1 class="slider-header">Weekend Offers</h1>
+                <a href="Weekend Offers-ViewAll.html">
+                    <p class="view-all-btn">View all</p>
+                </a>
+            </div>
             <div class="product-slider-wrapper" id="inspirationalQuotes">
                 <!-- Product Cards -->
 
@@ -486,7 +428,12 @@
     <!-- Outdoor & Commercial -->
     <div class="product-slider-section">
         <div class="slider-container">
-            <h1 class="slider-header">Outdoor Commercial</h1>
+            <div class="head-heading">
+                <h1 class="slider-header">Business Anniversary</h1>
+                <a href="Business Anniversary-ViewAll.html">
+                    <p class="view-all-btn">View all</p>
+                </a>
+            </div>
             <div class="product-slider-wrapper" id="outdoorAndCommercial">
                 <!-- Product Cards -->
             </div>
@@ -495,7 +442,12 @@
     <!-- Artists & Abstract -->
     <div class="product-slider-section">
         <div class="slider-container">
-            <h1 class="slider-header">Artists Abstract</h1>
+            <div class="head-heading">
+                <h1 class="slider-header">Super Scale Banner</h1>
+                <a href="Super Scale Banner-ViewAll.html">
+                    <p class="view-all-btn">View all</p>
+                </a>
+            </div>
             <div class="product-slider-wrapper" id="artistAndAbstract">
                 <!-- Product Cards -->
             </div>
@@ -504,7 +456,12 @@
     <!-- Religious & Cultural -->
     <div class="product-slider-section">
         <div class="slider-container">
-            <h1 class="slider-header">Religious Cultural</h1>
+            <div class="head-heading">
+                <h1 class="slider-header">Religious Cultural</h1>
+                <a href="Religious Cultural-ViewAll.html">
+                    <p class="view-all-btn">View all</p>
+                </a>
+            </div>
             <div class="product-slider-wrapper" id="ReligiousCultural">
                 <!-- Product Cards -->
             </div>
@@ -527,7 +484,6 @@
                                     <ul class="menu">
                                         <li>Home</li>
                                         <li>Customize</li>
-                                        <li>Neon Sign</li>
                                         <li>Contact Us</li>
 
                                     </ul>
@@ -535,29 +491,18 @@
                             </div>
                             <div class="col-sm-3">
                                 <div class="col-sm-3 f-points">
-                                    <h3>Neon Sign</h3>
+                                    <h3>Make Posts</h3>
                                     <div class="links">
                                         <ul class="menu">
-                                            <li><a href="#product-slider-wrapper22">Business
-                                                    Specific</a></li>
-                                            <li><a href="#product-slider-wrapper11">Home
-                                                    Decor</a></li>
-                                            <li><a href="#product-slider-wrapper33">Event
-                                                    & Celebrations</a></li>
-                                            <li><a href="#inspirationalQuotes">Inspirational
-                                                    & Quotes</a></li>
-                                            <li><a href="#product-slider-wrapper44">Custom
-                                                    Design</a></li>
-                                            <li><a href="#seasonalTheame">Seasonal
-                                                    Themes</a></li>
-                                            <li><a href="#product-slider-wrapper">
-                                                    Hobbies & Interests</a></li>
-                                            <li><a href="#outdoorAndCommercial">Outdoor
-                                                    & Commercial</a></li>
-                                            <li><a href="#artistAndAbstract">Artistic
-                                                    & Abstract</a></li>
-                                            <li><a href="#ReligiousCultural">Religious
-                                                    & Cultural</a></li>
+                                            <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
+                                            <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
+                                            <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
+                                            <li><a href="#inspirationalQuotes">Month End Offer</a></li>
+                                            <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
+                                            <li><a href="#seasonalTheame">Weekend Offers</a></li>
+                                            <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
+                                            <li><a href="#artistAndAbstract">Business Anniversary</a></li>
+                                            <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -568,15 +513,14 @@
                                     <div class="links">
                                         <ul class="menu">
                                             <li>Best Seller Products </li>
-                                            <li>Why Neon Attack</li>
-                                            <li> Illusion Lamps</li>
+
                                             <li> Exclusive Products</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-sm-3 secution">
-                                <img src="/img/neon-planner-logo-removebg-preview.png" alt="">
+                                <img src="./img/logo_techbro-removebg-preview.png" alt="">
                                 <div class="fsocial">
                                     <ul>
                                         <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
@@ -595,8 +539,9 @@
                                             </a></li>
                                     </ul>
                                 </div>
-                                <div class="pay-now-btn">
-                                    <a href="#" class="pay-now-a">Pay Now</a>
+                                <div class="contactus">
+                                    <p><i class="fas fa-phone me-2 text-teal"></i> <a href="tel:+917597722920">+917597722920</a></p>
+                                  <p><i class="fas fa-envelope me-2 text-teal"></i> <a href="mailto:info@techbro24.com">info@techbro24.com</a></p>
                                 </div>
                             </div>
                         </div>
@@ -610,10 +555,10 @@
         <div class="row">
             <div class="footer-end">
                 <p>Copyright ©
-                    <label for="" class="Footer-span">2024</label>
-                    <b>Neon Planet</b>
+                    <label for="" class="Footer-span">2025</label>
+                    <!-- <b>Neon Planet</b> -->
                     . All Rights Reserved. | Design and Developed By
-                    <a href="">TechBro24</a>
+                    <a href="https://www.techbro24.com/" target="_blank">TechBro24</a>
                 </p>
             </div>
         </div>
@@ -622,14 +567,14 @@
     <!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
 
 
-    <script src="./script.js"></script>
+    <script src="./script.js">
+ 
+
+    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
-    <script src="./api/autj-logout.js"></script>
-
-
 
     <script src="./api/check-token.js"></script>
-    <script src="./api/track-whatsapp-btn.api.js"></script>
+
     <script src="./api/auth-sigin-signup.api.js"></script>
     <script src="./api/card-add-product.api.js"></script>
     <script src="script.js"></script>
@@ -645,6 +590,13 @@
 
     </script>
 
+
+    <script>
+        productCard.addEventListener('click', () => {
+            window.location.href = `/Detail-page.html?id=${product._id}`;
+        });
+
+    </script>
 
 </body>
 

@@ -350,33 +350,22 @@ async function adminDeleteUser(req, res) {
 };
 
 
-// Add product admin
+// Add product admin - Only image and category
 async function adminAddProduct(req, res) {
-    const { productName, price, offerOnPrice, category, rating } = req.body;
+    const { category } = req.body;
 
-    if (!productName || !price || !offerOnPrice || !category) {
+    // Validation: category and image required
+    if (!category || !req.file) {
         return res.status(400).json({
             success: false,
-            message: "All fields are required"
-        });
-    }
-
-    // Validate file upload
-    if (!req.file) {
-        return res.status(400).json({
-            success: false,
-            message: "Image file is required"
+            message: "Image and category are required"
         });
     }
 
     try {
         const productData = {
-            productName,
-            price,
-            offerOnPrice,
             category,
-            rating,
-            productImage: req.file.filename, // Store the uploaded image filename
+            productImage: req.file.filename, // assuming multer is configured correctly
         };
 
         const product = await Product.create(productData);
@@ -390,8 +379,8 @@ async function adminAddProduct(req, res) {
 
         return res.status(201).json({
             success: true,
-            message: "Product added successfully",
-            addProductData: product
+            message: "Image uploaded successfully",
+            data: product
         });
     } catch (error) {
         console.error('Error in adminAddProduct:', error);
@@ -401,6 +390,7 @@ async function adminAddProduct(req, res) {
         });
     }
 }
+
 
 
 
@@ -625,6 +615,7 @@ async function updateProductClick(req, res) {
 
 
 
+
 export {
     authSignUpController,
     loginController,
@@ -642,3 +633,5 @@ export {
     updateProductClick
     
 }
+
+
