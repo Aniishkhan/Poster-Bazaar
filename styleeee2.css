@@ -334,7 +334,7 @@ li a:hover {
 }
 
 .user-icon {
-    color: white;
+    color:#0eabad;
     position: absolute;
     margin-top: 10px;
     margin-left: -40px;
@@ -1704,3 +1704,386 @@ color: #0eabad;
     color: #0eabad;
     text-decoration: underline;
 }
+
+
+/* forget-password page */
+
+/* Container */
+.forget-pass-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    padding: 20px;
+  }
+  
+  /* Inner row */
+  .forget-pass-container .row {
+    background-color: white;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .forget-pass-container .row h1 {
+    color: #0eabad;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  /* Response Message */
+  #resetResponse {
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  /* Description text */
+  .forget-pass-container .row p {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  /* Email input field */
+  #resetForm .email {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  #resetForm .email label {
+    display: block;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  #resetForm #email {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+  }
+  
+  /* Submit button */
+  #resetForm .submit {
+    background-color: #0eabad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  #resetForm .submit:hover {
+    background-color: #0eabad;
+  }
+  
+  /* Cancel link */
+  #resetForm a {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+  }
+  
+  #resetForm a p {
+    color: #0eabad;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  #resetForm a:hover p {
+    color: #0eabad;
+  }
+  
+
+
+  /* auth-otp page */
+  /* Main OTP container */
+.otp-container {
+    max-width: 400px;
+    margin: 80px auto;
+    padding: 30px 25px;
+   
+    border-radius: 12px;
+
+    text-align: center;
+  }
+  
+  /* Heading */
+  .otp-container h3 {
+    font-size: 22px;
+    color: #0eabad;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Input group container */
+  .otp-inputs {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 25px;
+  }
+  
+  /* Each OTP input */
+  #otp1,
+  #otp2,
+  #otp3,
+  #otp4 {
+    width: 48px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 6px;
+    border: 1px solid #ffac20;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  #otp1:focus,
+  #otp2:focus,
+  #otp3:focus,
+  #otp4:focus {
+    border-color: #0eabad;
+  }
+  
+  /* Submit button */
+  #submitOtpBtn {
+    background-color: #0eabad;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  #submitOtpBtn:hover {
+    background-color: #006666;
+  }
+  
+
+  /* auth-reset-password page */
+ 
+.auth-reset-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+    padding: 20px;
+  }
+  
+  /* Inner box */
+  .reset-row {
+   
+    padding: 40px 30px;
+    border-radius: 12px;
+
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  /* Heading inside form */
+  .reset-row h1 {
+    color: #0eabad;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  /* Message box */
+  #msgBox {
+    font-size: 16px;
+    color: red;
+    margin-bottom: 10px;
+  }
+  
+  /* Password field wrapper */
+  #newPassForm .firstname {
+    text-align: left;
+    margin-bottom: 25px;
+  }
+  
+  /* Label */
+  #newPassForm .firstname label {
+    display: block;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  
+  /* Password input */
+  #createPass {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border 0.3s ease;
+  }
+  
+  #createPass:focus {
+    border-color: #0eabad;
+  }
+  
+  /* Submit button */
+  #newPassForm .submit {
+    background-color: #0eabad;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #newPassForm .submit:hover {
+    background-color: #006666;
+  }
+  
+
+
+
+  /* About-us page*/
+   
+  .about-hero {
+    background-color: #008080;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+
+  .about-hero p {
+    font-size: 1.2rem;
+  }
+
+  .about-section {
+      margin-top: 60px;
+  }
+
+  .about-section,
+  .faq-section,
+  .testimonial-section {
+    padding: 60px 20px;
+  }
+
+  .feature-box {
+    background: white;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+  }
+
+  .feature-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .feature-box i {
+    font-size: 2.5rem;
+    color: #008080;
+    margin-bottom: 15px;
+  }
+
+  .team-section {
+    background-color: #f1f1f1;
+    padding: 60px 20px;
+  }
+
+  .team-member {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .team-member img {
+    border-radius: 50%;
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .testimonial {
+    background: white;
+    border-left: 4px solid #008080;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.07);
+  }
+
+  .testimonial p {
+    font-style: italic;
+  }
+
+  .faq h5 {
+    color: #008080;
+    font-weight: 600;
+  }
+
+  .cta-section {
+    background-color: #008080;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .cta-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .cta-section a {
+    background: white;
+    color: #008080;
+    padding: 12px 24px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+ 
+
+  .footer-end p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .footer-end a {
+    color: #fff;
+    font-weight: 500;
+    text-decoration: underline;
+  }
+
+  .Footer-span {
+    font-weight: 600;
+  }
+
+  .contactus,
+  .contactus a {
+      color:#0eabad ;
+  }
+
+  
+
+  /* settings icon dropdown  */
+  

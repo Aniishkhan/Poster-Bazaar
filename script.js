@@ -1,7 +1,4 @@
-
-
-
-        // light & dark mode swich js
+  // light & dark mode swich js
         const toggleButton = document.getElementById('modeToggle');
         const themeLink = document.getElementById('themeStylesheet');
         const modeIcon = document.getElementById('modeIcon');
@@ -25,20 +22,35 @@
         });
 
 
-
-
-
 const listItems = document.querySelectorAll('.navigation ul li');
 const indicator = document.querySelector('.indicator');
 
+// Get the current page name from URL
+const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+// Set active class on load
+listItems.forEach((li, index) => {
+  const anchor = li.querySelector("a");
+  const hrefPage = anchor.getAttribute("href");
+
+  // If current page matches link href
+  if (hrefPage === currentPage) {
+    listItems.forEach(item => item.classList.remove('active')); // remove all first
+    li.classList.add('active'); // set current one
+
+    const indicatorPosition = index * 70; // adjust based on menu item width
+    indicator.style.transform = `translateX(${indicatorPosition}px)`;
+  }
+});
+
+// Also keep the click listener (optional for SPA navigation or visual)
 listItems.forEach((li, index) => {
   li.addEventListener('click', function () {
-    listItems.forEach(item => item.classList.remove('active')); // Remove 'active' from all items
-    li.classList.add('active'); // Add 'active' to the clicked item
+    listItems.forEach(item => item.classList.remove('active'));
+    li.classList.add('active');
 
-    // Calculate indicator position
-    const indicatorPosition = index * 70; // 70px is the width of each menu item
-    indicator.style.transform = `translateX(${indicatorPosition}px)`; // Move indicator
+    const indicatorPosition = index * 70;
+    indicator.style.transform = `translateX(${indicatorPosition}px)`;
   });
 });
 
