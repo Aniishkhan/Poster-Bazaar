@@ -89,7 +89,7 @@ a {
     align-items: center;
     text-align: center;
     overflow: hidden;
-    background: #000;
+
   }
 
   /* Background Image Styling */
@@ -112,9 +112,6 @@ a {
     transition: transform 0.5s ease-in-out;
   }
 
-  .hero:hover .hero-image img {
-    transform: scale(1.1);
-  }
 
   /* Gradient Overlay to Make Text Stand Out */
   .hero::before {

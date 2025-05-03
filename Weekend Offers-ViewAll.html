@@ -21,8 +21,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- <<<<<<<<<<<<<css>>>>>>>>>> -->
-        <link  id="themeStylesheet" rel="stylesheet" href="./styleeee2.css">
-    <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive2.css">
 
     <style>
         .product-card  {
@@ -35,120 +35,48 @@
 <body>
 
 
-    <!-- <<<<<<<<<<<<------Navbar->>>>>>>> -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="navbar">
-                <div class="container">
-                    <button id="modeToggle">
-                        <span id="modeIcon">🌞</span>
-                    </button>
-                    <div class="logo">
-                        <!-- <img src="img/neon-planner-logo-removebg-preview.png" alt=""> -->
-                        <img src="./img/logo_techbro-removebg-preview.png" alt="">
-                    </div>
-                    <div class="navbar-items">
-                        <ul class="list-items">
-                            <li><a href="index.html">Home</a></li>
-                            <li>
-                                <a href="Poster-custimzer.html">Custom
-                            </li>
-                            <li>
-                                Make Posts <i class="fa navcticn fa-angle-down" aria-hidden="true"></i>
-                                <ul class="dropdown service">
-                                    <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
-                                    <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
-                                    <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
-                                    <li><a href="#inspirationalQuotes">Month End Offer</a></li>
-                                    <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
-                                    <li><a href="#seasonalTheame">Weekend Offers</a></li>
-                                    <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
-                                    <li><a href="#artistAndAbstract">Business Anniversary</a></li>
-                                    <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
-
-                                </ul>
-                                <li><a href="AboutUs.html">About</a></li>
-                            </li>
-                          
-                            <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
-                            <li><a href="#" id="adminNav" style="display: none;">Admin</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="btn">
-                        <!-- <div class="shopping-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div> -->
-                        <!-- <p id="logoutBtn">Logout</p> -->
-
-                        <div class="auth-signup">
-                            <a href="./auth-signin.html"><i class="fas fa-user user-icon"></i></a>
-                        </div>
-                        <div id="searchBtn">
-                            <input class="form-control me-2" id="search" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <button id="searchBtnn">
-                                <i class="fas fa-search"></i>
-                            </button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Header Start -->
+<div class="navbar">
+    <div class="logo-toggle">
+    <div class="logo">
+      <img src="./img/logo_techbro-removebg-preview.png" alt="Logo">
     </div>
-    <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
-    <div class="navigation">
-        <ul>
-            <li class="active">
-                <a href="index.html">
-                    <span class="icon">
-                        <i class="fa fa-home"></i>
-                    </span>
-                    <span class="text">Home</span>
-                </a>
-            </li>
-            <li class="profile-dropdown">
-                <a href="auth-signup.html">
-                    <span class="icon"><i class="fa fa-user"></i></span>
-                    <span class="text">Sign Up</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <a href="#">View Profile</a>
-                    <a href="#">Edit Profile</a>
-                    <a href="#">Settings</a>
-                </ul>
-            </li>
-            <li>
-                <a href="Poster-custimzer.html">
-                    <span class="icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </span>
-                    <span class="text">Custom</span>
-                </a>
-            </li>
-            <li>
-                <a href="AboutUs.html">
-                    <span class="icon">
-                        <i class="fas fa-info-circle"></i>
-
-                    </span>
-                    <span class="text">About</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon">
-                        <i class="fa fa-gear"></i>
-                    </span>
-                    <span class="text">Settings</span>
-                </a>
-            </li>
-
-            <div class="indicator"></div>
-        </ul>
+  
+    <!-- Toggle Button (visible on small screens) -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
     </div>
-
+  
+  </div>
+  
+    <div class="navbar-items" id="navbar-items">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Poster-custimzer.html">Custom</a></li>
+        <li>
+          <a href="#">Templates <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
+            <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
+            <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
+            <li><a href="#inspirationalQuotes">Inspirational Quotes</a></li>
+            <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
+          </ul>
+        </li>
+        <li><a href="AboutUs.html">About</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Pricing.html">Pricing</a></li>
+      </ul>
+      <!-- <div class="auth-buttons">
+        <a href="auth-signin.html" class="login">Login</a>
+        <a href="auth-signup.html" class="signup">Sign Up</a>
+      </div> -->
+    </div>
+  
+   
+  </div>
+  <!-- Header End -->
+   
 
     <div class="product-slider-wrapper" id="inspirationalQuotes">
         <!-- Product Cards -->
@@ -157,111 +85,63 @@
     </div>
 
          <!-- <<<<<<<<<<<footer >>>>>>>>>>>> -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="section-footer">
-                    <div class="row">
-                        <div class="col-sm-12 d-flex">
-                            <div class="col-sm-3 f-points">
-                                <h3>Useful Links</h3>
-                                <div class="links">
-                                    <ul class="menu">
-                                        <li>Home</li>
-                                        <li>Customize</li>
-                                        <li>Neon Sign</li>
-                                        <li>Contact Us</li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-sm-3 f-points">
-                                    <h3>Neon Sign</h3>
-                                    <div class="links">
-                                        <ul class="menu">
-                                            <li><a href="#product-slider-wrapper22">Business
-                                                    Specific</a></li>
-                                            <li><a href="#product-slider-wrapper11">Home
-                                                    Decor</a></li>
-                                            <li><a href="#product-slider-wrapper33">Event
-                                                    & Celebrations</a></li>
-                                            <li><a href="#inspirationalQuotes">Inspirational
-                                                    & Quotes</a></li>
-                                            <li><a href="#product-slider-wrapper44">Custom
-                                                    Design</a></li>
-                                            <li><a href="#seasonalTheame">Seasonal
-                                                    Themes</a></li>
-                                            <li><a href="#product-slider-wrapper">
-                                                    Hobbies & Interests</a></li>
-                                            <li><a href="#outdoorAndCommercial">Outdoor
-                                                    & Commercial</a></li>
-                                            <li><a href="#artistAndAbstract">Artistic
-                                                    & Abstract</a></li>
-                                            <li><a href="#ReligiousCultural">Religious
-                                                    & Cultural</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-sm-3 f-points">
-                                    <h3>Top Services</h3>
-                                    <div class="links">
-                                        <ul class="menu">
-                                            <li>Best Seller Products </li>
-                                            <li>Why Neon Attack</li>
-                                            <li> Illusion Lamps</li>
-                                            <li> Exclusive Products</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 secution">
-                                <img src="./img/logo_techbro-removebg-preview.png" alt="">
-                                <div class="fsocial">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li> <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li> <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-                                                <i class="fab fa-linkedin-in"></i>
-                                            </a></li>
-                                        <li><a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
-                                                <i class="fab fa-youtube"></i>
-                                            </a></li>
-                                    </ul>
-                                </div>
-                                <div class="contactus">
-                                    <p><i class="fas fa-phone me-2 text-teal"></i> <a href="tel:+917597722920">+917597722920</a></p>
-                                  <p><i class="fas fa-envelope me-2 text-teal"></i> <a href="mailto:info@techbro24.com">info@techbro24.com</a></p>
-                                </div>
+            <footer class="custom-footer">
+                <div class="footer-container">
+                    <div class="footer-row">
+                        <!-- Useful Links Section -->
+                        <div class="footer-col">
+                            <h3 class="footer-heading">Useful Links</h3>
+                            <ul class="footer-menu">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">Customize</a></li>
+                                <li><a href="#">Contact Us</a></li>
+                            </ul>
+                        </div>
+                        <!-- Make Posts Section -->
+                        <div class="footer-col">
+                            <h3 class="footer-heading">Make Posts</h3>
+                            <ul class="footer-menu">
+                                <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
+                                <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
+                                <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
+                                <li><a href="#inspirationalQuotes">Month End Offer</a></li>
+                                <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
+                                <li><a href="#seasonalTheame">Weekend Offers</a></li>
+                                <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
+                                <li><a href="#artistAndAbstract">Business Anniversary</a></li>
+                                <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
+                            </ul>
+                        </div>
+                        <!-- Top Services Section -->
+                        <div class="footer-col">
+                            <h3 class="footer-heading">Top Services</h3>
+                            <ul class="footer-menu">
+                                <li><a href="#">Best Seller Products</a></li>
+                                <li><a href="#">Exclusive Products</a></li>
+                            </ul>
+                        </div>
+                        <!-- Contact & Social Section -->
+                        <div class="footer-col">
+                            <img src="./img/logo_techbro-removebg-preview.png" alt="TechBro24 Logo" class="footer-logo">
+                            <ul class="social-links">
+                                <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                            <div class="footer-contact">
+                                <p><i class="fas fa-phone"></i> <a href="tel:+917597722920">+91 75977 22920</a></p>
+                                <p><i class="fas fa-envelope"></i> <a href="mailto:info@techbro24.com">info@techbro24.com</a></p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </footer>
-
-    <div class="container">
-        <div class="row">
-            <div class="footer-end">
-                <p>Copyright ©
-                    <label for="" class="Footer-span">2025</label>
-                    <!-- <b>Neon Planet</b> -->
-                    . All Rights Reserved. | Design and Developed By
-                    <a href="https://www.techbro24.com/" target="_blank">TechBro24</a>
-                </p>
-            </div>
-        </div>
-
-    </div>
+                <div class="footer-bottom">
+                    <p>Copyright © <span class="footer-year">2025</span> <b>Techbro24</b>. All Rights Reserved. | Designed and Developed by 
+                        <a href="https://www.techbro24.com/" target="_blank">TechBro24</a>
+                    </p>
+                </div>
+            </footer>
     <!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
   
 

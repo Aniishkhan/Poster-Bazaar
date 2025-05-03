@@ -1,0 +1,293 @@
+
+.navbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px 20px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1000;
+}
+
+
+
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* For mobile screens */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .navbar-items {
+    display: none;
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .navbar-items ul {
+    flex-direction: column;
+    padding: 10px 0;
+  }
+
+  .navbar-items.active {
+    display: block;
+  }
+
+  .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+}
+
+
+
+/* === Responsive CSS Additions === */
+
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 20px;
+  }
+  .search-bar {
+    width: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-items ul {
+    gap: 12px;
+  }
+  .auth-buttons a {
+    padding: 8px 14px;
+    font-size: 14px;
+  }
+  .hero-content span.highlight-blue {
+    font-size: 32px;
+  }
+  .hero-content h1 {
+    font-size: 32px;
+  }
+  .hero-content .tagline {
+    font-size: 16px;
+  }
+  .product-card img,
+  .festival-card img {
+    height: 250px ;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar-items ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .logo-toggle {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .auth-buttons {
+    flex-direction: column;
+    width: 100%;
+    gap: 8px;
+  }
+  .hero-content span.highlight-blue {
+    font-size: 28px;
+  }
+  .hero-content h1 {
+    font-size: 26px;
+  }
+  .hero-content .tagline {
+    font-size: 15px;
+  }
+  .search-bar {
+    padding: 16px 14px;
+    font-size: 14px;
+  }
+  .scroll-gallery-wrapper {
+    height: 100%;
+  }
+
+  .scroll-gallery {
+    height: 100%;
+  }
+  .column {
+    height: auto;
+    width: 100%;
+  }
+  .product-card,
+  .festival-card {
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    padding: 15px;
+  }
+  .hero {
+    padding: 60px 20px;
+  }
+  .hero-content span.highlight-blue {
+    font-size: 24px;
+  }
+  .hero-content h1 {
+    font-size: 22px;
+  }
+  .hero-content .tagline {
+    font-size: 14px;
+  }
+  .search-bar {
+    width: 100%;
+    padding: 14px 10px;
+  }
+  .product-card img,
+  .festival-card img {
+    height: 200px ;
+  }
+  .trusted-section h2,
+  .festival-heading h1,
+  .card-section-header h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero-content span.highlight-blue,
+  .hero-content h1,
+  .hero-content .tagline {
+    text-align: left;
+  }
+  .product-card,
+  .festival-card {
+    width: 100%;
+  }
+  .search-bar input {
+    font-size: 14px;
+  }
+}
+
+
+/* Mobile devices (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .card-section-header h1 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .cta-link {
+    font-size: 16px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-section-header h1 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .cta-link {
+    font-size: 17px;
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+/* Small Desktops (769px - 1024px) */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-section-header h1 {
+    font-size: 30px;
+  }
+
+  .cta-link {
+    font-size: 18px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .head-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+      gap: 0;
+  }
+
+  .slider-header {
+      font-size: 1.3rem;
+  }
+
+  .view-all-btn {
+      font-size: 0.9rem;
+  }
+}

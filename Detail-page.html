@@ -25,9 +25,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- <<<<<<<<<<<<<css>>>>>>>>>> -->
-    <link id="themeStylesheet" rel="stylesheet" href="./styleeee2.css">
-    <link rel="stylesheet" href="responsive.css">
-    <style>
+    <link id="themeStylesheet" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive2.css">
+     <style>
         /* General styling for the entire page */
         .main-d-flex {
             display: flex;
@@ -201,7 +201,7 @@
                 margin: auto;
             }
         }
-    </style>
+    </style> 
 
 
 
@@ -213,70 +213,48 @@
 <body>
 
 
-    <!-- <<<<<<<<<<<<------Navbar->>>>>>>> -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="navbar">
-                <div class="container">
-                    <button id="modeToggle">
-                        <span id="modeIcon">🌞</span>
-                    </button>
-                    <div class="logo">
-                        <!-- <img src="img/neon-planner-logo-removebg-preview.png" alt=""> -->
-                        <img src="./img/logo_techbro-removebg-preview.png" alt="">
-                    </div>
-                    <div class="navbar-items">
-                        <ul class="list-items">
-                            <li><a href="index.html">Home</a></li>
-                            <li>
-                                <a href="Poster-custimzer.html">Custom
-                            </li>
-                            <li>
-                                Make Posts <i class="fa navcticn fa-angle-down" aria-hidden="true"></i>
-                                <ul class="dropdown service">
-                                    <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
-                                    <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
-                                    <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
-                                    <li><a href="#inspirationalQuotes">Month End Offer</a></li>
-                                    <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
-                                    <li><a href="#seasonalTheame">Weekend Offers</a></li>
-                                    <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
-                                    <li><a href="#artistAndAbstract">Business Anniversary</a></li>
-                                    <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
-
-                                </ul>
-                                <li><a href="AboutUs.html">About</a></li>
-                            </li>
-                          
-                            <!-- <li><a href="portfolio.html">Portfolio</a></li> -->
-                            <li><a href="#" id="adminNav" style="display: none;">Admin</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="btn">
-                        <!-- <div class="shopping-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div> -->
-                        <!-- <p id="logoutBtn">Logout</p> -->
-
-                        <div class="auth-signup">
-                            <a href="./auth-signin.html"><i class="fas fa-user user-icon"></i></a>
-                        </div>
-                        <div id="searchBtn">
-                            <input class="form-control me-2" id="search" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <button id="searchBtnn">
-                                <i class="fas fa-search"></i>
-                            </button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Header Start -->
+<div class="navbar">
+    <div class="logo-toggle">
+    <div class="logo">
+      <img src="./img/logo_techbro-removebg-preview.png" alt="Logo">
     </div>
-    <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
-    <div class="navigation">
+  
+    <!-- Toggle Button (visible on small screens) -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+  
+  </div>
+  
+    <div class="navbar-items" id="navbar-items">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Poster-custimzer.html">Custom</a></li>
+        <li>
+          <a href="#">Templates <i class="fas fa-angle-down"></i></a>
+          <ul class="dropdown">
+            <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
+            <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
+            <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
+            <li><a href="#inspirationalQuotes">Inspirational Quotes</a></li>
+            <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
+          </ul>
+        </li>
+        <li><a href="AboutUs.html">About</a></li>
+        <li><a href="Blog.html">Blog</a></li>
+        <li><a href="Pricing.html">Pricing</a></li>
+      </ul>
+    
+    </div>
+    <!-- <div class="auth-buttons">
+        <a href="auth-signin.html" class="login">Login</a>
+        <a href="auth-signup.html" class="signup">Sign Up</a>
+      </div> -->
+   
+  </div>
+  <!-- Header End -->
+    <!-- <div class="navigation">
         <ul>
             <li class="active">
                 <a href="index.html">
@@ -325,7 +303,7 @@
 
             <div class="indicator"></div>
         </ul>
-    </div>
+    </div> -->
 
 
 
@@ -404,101 +382,149 @@
     <div id="posters" class="posters-container"></div>
 
 
-    <!-- <<<<<<<<<<<footer >>>>>>>>>>>> -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="section-footer">
-                    <div class="row">
-                        <div class="col-sm-12 flex">
-                            <div class="col-sm-3 f-points">
-                                <h3>Useful Links</h3>
-                                <div class="links">
-                                    <ul class="menu">
-                                        <li>Home</li>
-                                        <li>Customize</li>
-                                        <li>Contact Us</li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-sm-3 f-points">
-                                    <h3>Make Posts</h3>
-                                    <div class="links">
-                                        <ul class="menu">
-                                            <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
-                                            <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
-                                            <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
-                                            <li><a href="#inspirationalQuotes">Month End Offer</a></li>
-                                            <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
-                                            <li><a href="#seasonalTheame">Weekend Offers</a></li>
-                                            <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
-                                            <li><a href="#artistAndAbstract">Business Anniversary</a></li>
-                                            <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-sm-3 f-points">
-                                    <h3>Top Services</h3>
-                                    <div class="links">
-                                        <ul class="menu">
-                                            <li>Best Seller Products </li>
-
-                                            <li> Exclusive Products</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 secution">
-                                <img src="./img/logo_techbro-removebg-preview.png" alt="">
-                                <div class="fsocial">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li> <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li> <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-                                                <i class="fab fa-linkedin-in"></i>
-                                            </a></li>
-                                        <li><a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
-                                                <i class="fab fa-youtube"></i>
-                                            </a></li>
-                                    </ul>
-                                </div>
-                                <div class="contactus">
-                                    <p><i class="fas fa-phone me-2 text-teal"></i> <a href="tel:+917597722920">+917597722920</a></p>
-                                  <p><i class="fas fa-envelope me-2 text-teal"></i> <a href="mailto:info@techbro24.com">info@techbro24.com</a></p>
-                                </div>
-                            </div>
-                        </div>
+    <footer class="custom-footer">
+        <div class="footer-container">
+            <div class="footer-row">
+                <!-- Useful Links Section -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Useful Links</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Customize</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <!-- Make Posts Section -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Make Posts</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
+                        <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
+                        <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
+                        <li><a href="#inspirationalQuotes">Month End Offer</a></li>
+                        <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
+                        <li><a href="#seasonalTheame">Weekend Offers</a></li>
+                        <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
+                        <li><a href="#artistAndAbstract">Business Anniversary</a></li>
+                        <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
+                    </ul>
+                </div>
+                <!-- Top Services Section -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Top Services</h3>
+                    <ul class="footer-menu">
+                        <li><a href="#">Best Seller Products</a></li>
+                        <li><a href="#">Exclusive Products</a></li>
+                    </ul>
+                </div>
+                <!-- Contact & Social Section -->
+                <div class="footer-col">
+                    <img src="./img/logo_techbro-removebg-preview.png" alt="TechBro24 Logo" class="footer-logo">
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                    </ul>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-phone"></i> <a href="tel:+917597722920">+91 75977 22920</a></p>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:info@techbro24.com">info@techbro24.com</a></p>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
-
-    <div class="container">
-        <div class="row">
-            <div class="footer-end">
-                <p>Copyright ©
-                    <label for="" class="Footer-span">2025</label>
-                    <!-- <b>Neon Planet</b> -->
-                    . All Rights Reserved. | Design and Developed By
-                    <a href="https://www.techbro24.com/" target="_blank">TechBro24</a>
-                </p>
-            </div>
+        <div class="footer-bottom">
+            <p>Copyright © <span class="footer-year">2025</span> <b>Techbro24</b>. All Rights Reserved. | Designed and Developed by 
+                <a href="https://www.techbro24.com/" target="_blank">TechBro24</a>
+            </p>
         </div>
+    </footer>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+          const params = new URLSearchParams(window.location.search);
+          const id = params.get("id");
+      
+          if (!id) return console.error("❌ No ID in URL");
+      
+          // Map image based on ID
+          const imageMap = {
+            "world-laughter-day": "img/world laughter day.avif",
+            "tipu-sultan-punyatithi": "img/tipu sultan.jpeg",
+            "shri-vallabhacharya-jayanti": "img/Shri Vallabhacharya Jayanti.jpeg",
+            "varuthini-ekadashi": "img/Varuthini Ekadashi.jpeg",
+            "international-firefighters-day": "img/International Firefighters' Day.jpeg",
+            "sita-navami": "img/Sita Navami.jpeg"
+          };
+      
+          const imgSrc = imageMap[id];
+          const imgElement = document.getElementById("productImage");
+      
+          if (imgElement && imgSrc) {
+            imgElement.src = imgSrc;
+            imgElement.alt = id.replace(/-/g, " ");
+          } else {
+            console.error("❌ Image not found for this ID:", id);
+          }
+        });
+      </script><script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get("id");
 
-    </div>
-    <!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
-    <script src="script.js"></script>
+    if (!id) return console.error("❌ No ID in URL");
+
+    // Map image based on ID
+    const imageMap = {
+      "world-laughter-day": "img/world laughter day.avif",
+      "tipu-sultan-punyatithi": "img/tipu sultan.jpeg",
+      "shri-vallabhacharya-jayanti": "img/Shri Vallabhacharya Jayanti.jpeg",
+      "varuthini-ekadashi": "img/Varuthini Ekadashi.jpeg",
+      "international-firefighters-day": "img/International Firefighters' Day.jpeg",
+      "sita-navami": "img/Sita Navami.jpeg"
+    };
+
+    const imgSrc = imageMap[id];
+    const imgElement = document.getElementById("productImage");
+
+    if (imgElement && imgSrc) {
+      imgElement.src = imgSrc;
+      imgElement.alt = id.replace(/-/g, " ");
+    } else {
+      console.error("❌ Image not found for this ID:", id);
+    }
+  });
+</script
+      
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+          try {
+            const params = new URLSearchParams(window.location.search);
+            const id = params.get("id");
+            if (!id) return console.log("❌ No ID in URL");
+        
+            const res = await fetch(`/api/get/product/${id}`);
+            const data = await res.json();
+        
+            const product = data.productData; // ✅ yahi fix tha
+            if (!product) return console.log("❌ Product not found");
+        
+            const img = document.getElementById("productImage");
+            if (img && product.productImage) {
+              img.src = `/uploads/${product.productImage}`;
+              img.alt = "Product Image";
+            } else {
+              console.log("❌ Image element not found");
+            }
+        
+          } catch (err) {
+            console.error("❌ Error:", err);
+          }
+        });
+        </script>
+    <script src="script.js">
+      
+    </script>
     <script>
         const defaultLogoPositions = {
             "1200x630": {
@@ -514,15 +540,15 @@
                 logo2X: 0, logo2Y: 942, logo2Width: 1024, logo2Height: 80
             }
         };
-
+    
         const sizeMap = {
             "1024x1024": [1024, 1024],
             "1080x1920": [1080, 1920],
             "1200x630": [1200, 630],
         };
-
+    
         let selectedSize = "1024x1024";
-
+    
         document.querySelectorAll('.size-option').forEach(img => {
             img.addEventListener('click', () => {
                 selectedSize = img.dataset.size;
@@ -530,138 +556,7 @@
                 customizePosters();
             });
         });
-
-        window.addEventListener('DOMContentLoaded', () => {
-            const postersDiv = document.getElementById('posters');
-            postersDiv.innerHTML = '';
-
-            const imageElement = document.getElementById('productImage');
-            const src = imageElement.src;
-
-            const posterDiv = document.createElement('div');
-            posterDiv.className = 'poster';
-            posterDiv.innerHTML = `
-        <img src="${src}" alt="Poster" id="poster0" data-original="${src}">
-        <button class="download-button" onclick="downloadPoster(0)">Download Poster</button>
-      `;
-            postersDiv.appendChild(posterDiv);
-        });
-
-        function customizePosters() {
-            const logoFile1 = document.getElementById('logo1').files[0];
-            const logoFile2 = document.getElementById('logo2').files[0];
-            const [canvasWidth, canvasHeight] = sizeMap[selectedSize];
-
-            if (!logoFile1 || !logoFile2) return alert("Please upload both Logo and Footer");
-
-            const reader1 = new FileReader();
-            const reader2 = new FileReader();
-
-            reader1.onload = function (e1) {
-                const logoUrl1 = e1.target.result;
-                reader2.onload = function (e2) {
-                    const logoUrl2 = e2.target.result;
-                    const productImg = document.getElementById('productImage');
-                    if (!productImg || !productImg.src) return alert("Product image not loaded");
-
-                    const originalImg = new Image();
-                    originalImg.crossOrigin = "Anonymous";
-                    originalImg.src = productImg.src;
-
-                    originalImg.onload = () => {
-                        const canvas = document.createElement('canvas');
-                        canvas.width = canvasWidth;
-                        canvas.height = canvasHeight;
-                        const ctx = canvas.getContext('2d');
-
-                        const color1 = document.getElementById('color1').value;
-                        const color2 = document.getElementById('color2').value;
-                        const direction = document.getElementById('gradientDirection').value;
-
-                        let gradient;
-                        if (direction === 'to right') gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
-                        else if (direction === 'to left') gradient = ctx.createLinearGradient(canvas.width, 0, 0, 0);
-                        else if (direction === 'to top') gradient = ctx.createLinearGradient(0, canvas.height, 0, 0);
-                        else gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
-
-                        gradient.addColorStop(0, color1);
-                        gradient.addColorStop(1, color2);
-                        ctx.fillStyle = gradient;
-                        ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-                        ctx.drawImage(originalImg, 0, 0, canvas.width, canvas.height);
-
-                        const logo1 = new Image();
-                        logo1.src = logoUrl1;
-                        logo1.onload = () => {
-                            const logo1X = parseInt(document.getElementById('logo1X').value);
-                            const logo1Y = parseInt(document.getElementById('logo1Y').value);
-                            const logo1Width = parseInt(document.getElementById('logo1Width').value);
-                            const logo1Height = parseInt(document.getElementById('logo1Height').value);
-                            ctx.drawImage(logo1, logo1X, logo1Y, logo1Width, logo1Height);
-
-                            const logo2 = new Image();
-                            logo2.src = logoUrl2;
-                            logo2.onload = () => {
-                                const logo2X = parseInt(document.getElementById('logo2X').value);
-                                const logo2Y = parseInt(document.getElementById('logo2Y').value);
-                                const logo2Width = parseInt(document.getElementById('logo2Width').value);
-                                const logo2Height = parseInt(document.getElementById('logo2Height').value);
-                                ctx.drawImage(logo2, logo2X, logo2Y, logo2Width, logo2Height);
-
-                                const dataUrl = canvas.toDataURL();
-
-                                const postersDiv = document.getElementById('posters');
-                                postersDiv.innerHTML = '';
-
-                                const posterDiv = document.createElement('div');
-                                posterDiv.className = 'poster';
-
-                                const updatedImg = new Image();
-                                updatedImg.src = dataUrl;
-                                updatedImg.id = `poster0`;
-                                updatedImg.setAttribute('data-original', productImg.src);
-
-                                const downloadBtn = document.createElement('button');
-                                downloadBtn.className = 'download-button';
-                                downloadBtn.textContent = 'Download Poster';
-                                downloadBtn.onclick = () => downloadPoster(0);
-
-                                posterDiv.appendChild(updatedImg);
-                                posterDiv.appendChild(downloadBtn);
-                                postersDiv.appendChild(posterDiv);
-                            };
-                        };
-                    };
-                };
-                reader2.readAsDataURL(logoFile2);
-            };
-            reader1.readAsDataURL(logoFile1);
-        }
-
-        function downloadPoster(index) {
-            const poster = document.getElementById(`poster${index}`);
-            const img = new Image();
-            img.src = poster.src;
-            img.onload = () => {
-                const canvas = document.createElement('canvas');
-                canvas.width = img.width;
-                canvas.height = img.height;
-                const ctx = canvas.getContext('2d');
-                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-
-                const link = document.createElement('a');
-                link.href = canvas.toDataURL('image/png');
-                link.download = `Poster_${index + 1}.png`;
-                link.click();
-            };
-        }
-
-        function downloadAllPosters() {
-            const posters = document.querySelectorAll('.poster img');
-            posters.forEach((_, i) => downloadPoster(i));
-        }
-
+    
         function setLogoDefaults(sizeKey) {
             const defaults = defaultLogoPositions[sizeKey];
             if (defaults) {
@@ -675,36 +570,167 @@
                 document.getElementById('logo2Height').value = defaults.logo2Height;
             }
         }
-
-        setLogoDefaults(selectedSize);
-    </script>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", async () => {
+    
+        async function fetchAndDisplayProduct() {
             try {
                 const params = new URLSearchParams(window.location.search);
                 const id = params.get("id");
                 if (!id) return console.log("❌ No ID in URL");
-
+    
                 const res = await fetch(`/api/get/product/${id}`);
                 const data = await res.json();
-
-                const product = data.productData; // ✅ yahi fix tha
+                const product = data.productData;
                 if (!product) return console.log("❌ Product not found");
-
+    
+                // Set title and desc
+                const title = document.getElementById("productTitle");
+                const desc = document.getElementById("productDesc");
+                if (title && product.title) title.textContent = product.title;
+                if (desc && product.description) desc.textContent = product.description;
+    
+                // Set image and wait for load
                 const img = document.getElementById("productImage");
-                if (img && product.productImage) {
-                    img.src = `/uploads/${product.productImage}`;
-                    img.alt = "Product Image";
-                } else {
-                    console.log("❌ Image element not found");
-                }
-
+                img.onload = () => createPoster(img.src);
+                img.src = `/uploads/${product.productImage}`;
+                img.alt = product.title || "Product Image";
+    
             } catch (err) {
-                console.error("❌ Error:", err);
+                console.error("❌ Error fetching product:", err);
             }
+        }
+    
+        function createPoster(src) {
+            const postersDiv = document.getElementById('posters');
+            postersDiv.innerHTML = '';
+            const posterDiv = document.createElement('div');
+            posterDiv.className = 'poster';
+            posterDiv.innerHTML = `
+                <img src="${src}" alt="Poster" id="poster0" data-original="${src}">
+                <button class="download-button" onclick="downloadPoster(0)">Download Poster</button>
+            `;
+            postersDiv.appendChild(posterDiv);
+        }
+    
+        function customizePosters() {
+            const logoFile1 = document.getElementById('logo1').files[0];
+            const logoFile2 = document.getElementById('logo2').files[0];
+            const [canvasWidth, canvasHeight] = sizeMap[selectedSize];
+    
+            if (!logoFile1 || !logoFile2) return alert("Please upload both Logo and Footer");
+    
+            const reader1 = new FileReader();
+            const reader2 = new FileReader();
+    
+            reader1.onload = function (e1) {
+                const logoUrl1 = e1.target.result;
+                reader2.onload = function (e2) {
+                    const logoUrl2 = e2.target.result;
+                    const productImg = document.getElementById('productImage');
+                    if (!productImg || !productImg.src) return alert("Product image not loaded");
+    
+                    const originalImg = new Image();
+                    originalImg.crossOrigin = "Anonymous";
+                    originalImg.src = productImg.src;
+    
+                    originalImg.onload = () => {
+                        const canvas = document.createElement('canvas');
+                        canvas.width = canvasWidth;
+                        canvas.height = canvasHeight;
+                        const ctx = canvas.getContext('2d');
+    
+                        const color1 = document.getElementById('color1').value;
+                        const color2 = document.getElementById('color2').value;
+                        const direction = document.getElementById('gradientDirection').value;
+    
+                        let gradient;
+                        if (direction === 'to right') gradient = ctx.createLinearGradient(0, 0, canvas.width, 0);
+                        else if (direction === 'to left') gradient = ctx.createLinearGradient(canvas.width, 0, 0, 0);
+                        else if (direction === 'to top') gradient = ctx.createLinearGradient(0, canvas.height, 0, 0);
+                        else gradient = ctx.createLinearGradient(0, 0, 0, canvas.height);
+    
+                        gradient.addColorStop(0, color1);
+                        gradient.addColorStop(1, color2);
+                        ctx.fillStyle = gradient;
+                        ctx.fillRect(0, 0, canvas.width, canvas.height);
+    
+                        ctx.drawImage(originalImg, 0, 0, canvas.width, canvas.height);
+    
+                        const logo1 = new Image();
+                        logo1.src = logoUrl1;
+                        logo1.onload = () => {
+                            const logo1X = parseInt(document.getElementById('logo1X').value);
+                            const logo1Y = parseInt(document.getElementById('logo1Y').value);
+                            const logo1Width = parseInt(document.getElementById('logo1Width').value);
+                            const logo1Height = parseInt(document.getElementById('logo1Height').value);
+                            ctx.drawImage(logo1, logo1X, logo1Y, logo1Width, logo1Height);
+    
+                            const logo2 = new Image();
+                            logo2.src = logoUrl2;
+                            logo2.onload = () => {
+                                const logo2X = parseInt(document.getElementById('logo2X').value);
+                                const logo2Y = parseInt(document.getElementById('logo2Y').value);
+                                const logo2Width = parseInt(document.getElementById('logo2Width').value);
+                                const logo2Height = parseInt(document.getElementById('logo2Height').value);
+                                ctx.drawImage(logo2, logo2X, logo2Y, logo2Width, logo2Height);
+    
+                                const dataUrl = canvas.toDataURL();
+                                const postersDiv = document.getElementById('posters');
+                                postersDiv.innerHTML = '';
+                                const posterDiv = document.createElement('div');
+                                posterDiv.className = 'poster';
+    
+                                const updatedImg = new Image();
+                                updatedImg.src = dataUrl;
+                                updatedImg.id = `poster0`;
+                                updatedImg.setAttribute('data-original', productImg.src);
+    
+                                const downloadBtn = document.createElement('button');
+                                downloadBtn.className = 'download-button';
+                                downloadBtn.textContent = 'Download Poster';
+                                downloadBtn.onclick = () => downloadPoster(0);
+    
+                                posterDiv.appendChild(updatedImg);
+                                posterDiv.appendChild(downloadBtn);
+                                postersDiv.appendChild(posterDiv);
+                            };
+                        };
+                    };
+                };
+                reader2.readAsDataURL(logoFile2);
+            };
+            reader1.readAsDataURL(logoFile1);
+        }
+    
+        function downloadPoster(index) {
+            const poster = document.getElementById(`poster${index}`);
+            const img = new Image();
+            img.src = poster.src;
+            img.onload = () => {
+                const canvas = document.createElement('canvas');
+                canvas.width = img.width;
+                canvas.height = img.height;
+                const ctx = canvas.getContext('2d');
+                ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+    
+                const link = document.createElement('a');
+                link.href = canvas.toDataURL('image/png');
+                link.download = `Poster_${index + 1}.png`;
+                link.click();
+            };
+        }
+    
+        function downloadAllPosters() {
+            const posters = document.querySelectorAll('.poster img');
+            posters.forEach((_, i) => downloadPoster(i));
+        }
+    
+        document.addEventListener("DOMContentLoaded", () => {
+            setLogoDefaults(selectedSize);
+            fetchAndDisplayProduct();
         });
     </script>
+    
+    
 </body>
 
 </html>

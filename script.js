@@ -1,25 +1,8 @@
-  // light & dark mode swich js
-        const toggleButton = document.getElementById('modeToggle');
-        const themeLink = document.getElementById('themeStylesheet');
-        const modeIcon = document.getElementById('modeIcon');
+// menu toggle active
 
-       
-        let isDarkMode = localStorage.getItem('theme') === 'dark';
-        themeLink.href = isDarkMode ? './styleeee.css' : './styleeee2.css';
-        modeIcon.textContent = isDarkMode ? '🌙' : '🌞'; 
-
-        toggleButton.addEventListener('click', () => {
-            if (isDarkMode) {
-                themeLink.href = './styleeee2.css';
-                localStorage.setItem('theme', 'light');
-                modeIcon.textContent = '🌞'; // sun for light
-            } else {
-                themeLink.href = './styleeee.css';
-                localStorage.setItem('theme', 'dark');
-                modeIcon.textContent = '🌙'; // moon for dark
-            }
-            isDarkMode = !isDarkMode;
-        });
+function toggleMenu() {
+  document.getElementById("navbar-items").classList.toggle("active");
+}
 
 
 const listItems = document.querySelectorAll('.navigation ul li');

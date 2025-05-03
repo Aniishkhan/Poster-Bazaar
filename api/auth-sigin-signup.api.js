@@ -97,7 +97,7 @@ async function handleLogin(event) {
 
         if (adminResponse.ok && adminResult.message === "Admin is logged in") {
             alert('Admin logged in');
-            window.location.href = '../admin-dashboard.html';
+            window.location.href = './admin-dashboard.html';
         } else {
             window.location.href = './index.html';
         }

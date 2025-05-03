@@ -1,4 +1,4 @@
-/*****************************************LIGHT THEME****************************************************/
+****************************************LIGHT THEME***************************************************
 
 
 body {
@@ -87,7 +87,7 @@ a {
     align-items: center;
     text-align: center;
     overflow: hidden;
-    background: #0eabad;
+ 
   }
 
 
@@ -110,10 +110,7 @@ a {
     transition: transform 0.5s ease-in-out;
   }
 
-  .hero:hover .hero-image img {
-    transform: scale(1.1);
-  }
-
+ 
  
   .hero::before {
     content: '';
@@ -207,6 +204,17 @@ a {
   }
 
 
+  .calendar-date {
+    font-size: 18px;
+    font-weight: 500;
+    color: #2c3e50;
+    margin-bottom: 15px;
+    background-color: #f1f1f1;
+    padding: 10px 20px;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
 
 
 
@@ -2085,5 +2093,5 @@ color: #0eabad;
 
   
 
-  /* settings icon dropdown  */
+
   

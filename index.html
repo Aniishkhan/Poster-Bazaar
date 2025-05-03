@@ -25,8 +25,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
     <!-- <<<<<<<<<<<<<css>>>>>>>>>> -->
-    <link id="themeStylesheet" rel="stylesheet" href="./styleeee2.css">
-    <link rel="stylesheet" href="responsive.css">
+    <link id="themeStylesheet" rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive2.css">
 
 
 </head>
@@ -34,147 +34,264 @@
 <body>
 
 
-    <!-- <<<<<<<<<<<<------Navbar->>>>>>>> -->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="navbar">
-                <div class="container">
-                    <button id="modeToggle">
-                        <span id="modeIcon">🌞</span>
-                    </button>
-                    <div class="logo">
-                        <!-- <img src="img/neon-planner-logo-removebg-preview.png" alt=""> -->
-                        <img src="./img/logo_techbro-removebg-preview.png" alt="">
-                    </div>
-                    <div class="navbar-items">
-                        <ul class="list-items">
-                            <li><a href="index.html">Home</a></li>
-                            <li>
-                                <a href="Poster-custimzer.html">Custom
-                            </li>
-                            <li>
-                                Make Posts <i class="fa navcticn fa-angle-down" aria-hidden="true"></i>
-                                <ul class="dropdown service">
-                                    <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
-                                    <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
-                                    <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
-                                    <li><a href="#inspirationalQuotes">Month End Offer</a></li>
-                                    <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
-                                    <li><a href="#seasonalTheame">Weekend Offers</a></li>
-                                    <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
-                                    <li><a href="#artistAndAbstract">Business Anniversary</a></li>
-                                    <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
+<!-- Header Start -->
+<div class="navbar">
+  <div class="logo-toggle">
+  <div class="logo">
+    <img src="./img/logo_techbro-removebg-preview.png" alt="Logo">
+  </div>
 
-                                </ul>
-                                <li><a href="AboutUs.html">About</a></li>
-                             <li><a href="auth-signup.html"><i class="fas fa-user-plus"></i></a></li>
-                            </li>
-                          
-                        </ul>
+  <!-- Toggle Button (visible on small screens) -->
+  <div class="menu-toggle" onclick="toggleMenu()">
+    <i class="fas fa-bars"></i>
+  </div>
 
-                    </div>
-                    <div class="btn">
-                        <!-- <div class="shopping-cart">
-                            <i class="fas fa-shopping-cart"></i>
-                        </div> -->
-                        <!-- <p id="logoutBtn">Logout</p> -->
+</div>
 
-                     
-                        <div id="searchBtn">
-                            <input class="form-control me-2" id="search" type="search" placeholder="Search"
-                                aria-label="Search">
-                            <button id="searchBtnn">
-                                <i class="fas fa-search"></i>
-                            </button>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- <<<<<<<<<<<<------NavbarEnd->>>>>>>> -->
-    <div class="navigation">
-        <ul>
-            <li class="">
-                <a href="index.html">
-                    <span class="icon">
-                        <i class="fa fa-home"></i>
-                    </span>
-                    <span class="text">Home</span>
-                </a>
-            </li>
-            <li class="profile-dropdown">
-                <a href="auth-signup.html">
-                    <span class="icon"><i class="fa fa-user"></i></span>
-                    <span class="text">Sign Up</span>
-                </a>
-                <ul class="dropdown-menu">
-                    <a href="#">View Profile</a>
-                    <a href="#">Edit Profile</a>
-                    <a href="#">Settings</a>
-                </ul>
-            </li>
-            <li>
-                <a href="Poster-custimzer.html">
-                    <span class="icon">
-                        <i class="fas fa-paint-brush"></i>
-                    </span>
-                    <span class="text">Custom</span>
-                </a>
-            </li>
-            <li>
-                <a href="AboutUs.html">
-                    <span class="icon">
-                        <i class="fas fa-info-circle"></i>
-
-                    </span>
-                    <span class="text">About</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon">
-                        <i class="fa fa-gear"></i>
-                    </span>
-                    <span class="text">Settings</span>
-                </a>
-                
-            </li>
-
-            <div class="indicator"></div>
+  <div class="navbar-items" id="navbar-items">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Poster-custimzer.html">Custom</a></li>
+      <li>
+        <a href="#">Templates <i class="fas fa-angle-down"></i></a>
+        <ul class="dropdown">
+          <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
+          <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
+          <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
+          <li><a href="#inspirationalQuotes">Inspirational Quotes</a></li>
+          <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
         </ul>
+      </li>
+      <li><a href="AboutUs.html">About</a></li>
+      <li><a href="Blog.html">Blog</a></li>
+      <li><a href="Pricing.html">Pricing</a></li>
+    </ul>
+  
+  </div>
+  <div class="auth-buttons">
+      <a href="auth-signin.html" class="login">Login</a>
+      <a href="auth-signup.html" class="signup">Sign Up</a>
     </div>
+ 
+</div>
+<!-- Header End -->
 
-    <!-- hero section -->
-    <div class="hero">
-        <div class="hero-image">
-            <img src="img/banner1.avif" alt="Poster Customizer Banner">
-        </div>
-        <div class="hero-content">
-            <h1>Create Stunning Posters</h1>
-            <p>Upload images, customize designs, and download with ease.</p>
-            <a href="#get-started" class="cta-button">Get Started</a>
-        </div>
+
+  <!-- Hero Section Start -->
+  <div class="hero">
+    <div class="hero-content">
+      <span class="highlight-blue">Design, Build & Grow</span>
+      <h1>your Business <span class="highlight-purple">with AI</span></h1>
+      <p class="tagline">An all-in-one marketing and branding solution tailored for every industry.</p>
     </div>
+  </div>
+  <!-- Hero Section End -->
+
+  <div class="search-wrapper">
+    <div class="search-bar">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" placeholder="Search templates" />
+    </div>
+  </div>
+
+  <!-- Masonry Grid Section -->
+  <div class="scroll-gallery-wrapper">
+    <div class="scroll-gallery-overlay"></div>
+    <div class="scroll-gallery">
+      <div class="column">
+        <div class="scroll-container">
+            <img src="img/banner 1.avif" alt="Image 1">
+            <img src="img/banner 1.avif" alt="Image 2">
+            <img src="img/banner 1.avif" alt="Image 3">
+            <img src="img/banner 1.avif" alt="Image 4">
+        </div>
+      </div>
+      <div class="column">
+        <div class="scroll-container reverse">
+            <img src="img/banner 1.avif" alt="Image 1">
+            <img src="img/banner 1.avif" alt="Image 2">
+            <img src="img/banner 1.avif" alt="Image 3">
+            <img src="img/banner 1.avif" alt="Image 4">
+        </div>
+      </div>
+      <div class="column">
+        <div class="scroll-container ">
+            <img src="img/banner 1.avif" alt="Image 1">
+            <img src="img/banner 1.avif" alt="Image 2">
+            <img src="img/banner 1.avif" alt="Image 3">
+            <img src="img/banner 1.avif" alt="Image 4">
+        </div>
+      </div>
+      <div class="column">
+        <div class="scroll-container reverse">
+            <img src="img/banner 1.avif" alt="Image 1">
+            <img src="img/banner 1.avif" alt="Image 2">
+            <img src="img/banner 1.avif" alt="Image 3">
+            <img src="img/banner 1.avif" alt="Image 4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="trusted-section">
+    <h2>Trusted by <span class="highlight">1.2M+</span> businesses across various industries</h2>
+    <div class="logo-container">
+      <div class="logo-scroll">
+        <img src="img/delwen.jpeg" alt="Delwen">
+        <img src="img/indiamart.jpeg" alt="Indiamart">
+        <img src="img/vyapar.jpeg" alt="Vyapar">
+        <img src="img/sensinova.jpeg" alt="Sensinova">
+        <img src="img/shaktiman.jpeg" alt="Shaktiman">
+        <img src="img/hi-foucs.jpeg" alt="Hi-Focus">
+        <img src="img/metrobit.jpeg" alt="Metrobit">
+        <img src="img/delwen.jpeg" alt="Delwen">
+        <img src="img/indiamart.jpeg" alt="Indiamart">
+        <img src="img/vyapar.jpeg" alt="Vyapar">
+        <img src="img/sensinova.jpeg" alt="Sensinova">
+        <img src="img/shaktiman.jpeg" alt="Shaktiman">
+        <img src="img/hi-foucs.jpeg" alt="Hi-Focus">
+        <img src="img/metrobit.jpeg" alt="Metrobit">
+      </div>
+    </div>
+  </section>
+  
+  <section class="festival-section">
+    <div class="festival-label">UPCOMING FESTIVAL</div>
+    <div class="festival-heading">
+      <h1>Celebrate Every Festival with Stunning Graphic Designs:</h1>
+      <p>Ready-Made Posters for Every Occasion!</p>
+    </div>
+  
+    <div class="festival-cards-container">
+      <div class="festival-card" id="festival-card">
+        <img src="img/world laughter day.avif" alt="World Laughter Day">
+        <p>World Laughter Day</p>
+      </div>
+  
+      <div class="festival-card" id="festival-card">
+        <img src="img/tipu sultan.jpeg" alt="Tipu Sultan Punyatithi">
+        <p>Tipu Sultan Punyatithi</p>
+      </div>
+  
+      <div class="festival-card" id="festival-card">
+        <img src="img/Shri Vallabhacharya Jayanti.jpeg" alt="Shri Vallabhacharya Jayanti">
+        <p>Shri Vallabhacharya Jayanti</p>
+      </div>
+  
+      <div class="festival-card" id="festival-card">
+        <img src="img/Varuthini Ekadashi.jpeg" alt="Varuthini Ekadashi">
+        <p>Varuthini Ekadashi</p>
+      </div>
+  
+      <div class="festival-card" id="festival-card">
+        <img src="img/International Firefighters' Day.jpeg" alt="International Firefighters' Day">
+        <p>International Firefighters' Day</p>
+      </div>
+  
+      <div class="festival-card" id="festival-card">
+        <img src="img/Sita Navami.jpeg" alt="Sita Navami">
+        <p>Sita Navami</p>
+      </div>
+    </div>
+</section>
+
+  
 
 
 
+<!-- all cards for hospital, education -->
+<section class="card-section">
+    <div class="card-section-header">
+      <h1>Marketing as distinctive as you are!</h1>
+      <a href="#" class="cta-link">Start creating for free →</a>
+    </div>
+    <div class="card-container">
+      <a href="hospital.html" class="card" style="background-color: #2d4dff;">
+        <p>Hospital and Clinic</p>
+        <img src="img/hospital.avif" alt="Hospital and Clinic">
+      </a>
+      <a href="mobile-store.html" class="card" style="background-color: #ff80bf;">
+        <p>Mobile Store</p>
+        <img src="img/mobile store.avif" alt="Mobile Store">
+      </a>
+      <a href="tours-travels.html" class="card" style="background-color: #ffd966;">
+        <p>Tours and Travels</p>
+        <img src="img/Tours and Travels.avif" alt="Tours and Travels">
+      </a>
+      <a href="insurance.html" class="card" style="background-color: #ff4d4d;">
+        <p>Insurance</p>
+        <img src="img/Insurance.avif" alt="Insurance">
+      </a>
+      <a href="chartered-accountant.html" class="card" style="background-color: #80d4ff;">
+        <p>Chartered Accountant</p>
+        <img src="img/Chartered Accountant.avif" alt="Chartered Accountant">
+      </a>
+      <a href="restaurant-cafe.html" class="card" style="background-color: #ff80ff;">
+        <p>Restaurant and Cafe</p>
+        <img src="img/Restaurant and Cafe.avif" alt="Restaurant and Cafe">
+      </a>
+    </div>
+  </section>
+
+  <section class="ai-tools-section">
+    <div class="ai-tools-container">
+      <!-- Label -->
+      <div class="section-label">
+        BENEFITS
+      </div>
+      <!-- Heading -->
+      <div class="section-heading">
+        <h1>All-in-one AI Business Tools: <span>Generate Leads, Create Content, Build Quotes, and Design Marketing Materials</span></h1>
+        <a href="#" class="cta-link">Start creating for free →</a>
+      </div>
+      <!-- Cards Section -->
+      <div class="cards-container">
+        <!-- Card 1 -->
+        <div class="ai-card">
+          <img src="img/ai dashboard business tool.avif" alt="Analytics">
+          <div class="card-content">
+            <h3>Analytics Dashboard</h3>
+            <p>Gain insights into your business performance with real-time data visualization.</p>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="ai-card">
+          <img src="img/Lead Generation.avif" alt="Lead Market">
+          <div class="card-content">
+            <h3>Lead Generation</h3>
+            <p>Create targeted campaigns to capture and convert leads effectively.</p>
+          </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="ai-card">
+          <img src="img/Marketing Tools.avif" alt="Marketing Tools">
+          <div class="card-content">
+            <h3>Marketing Tools</h3>
+            <p>Design stunning marketing materials to engage and grow your audience.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
     <!-- <<<<<<<<<<<<------mainbox->>>>>>>> -->
     <!-- Business specific -->
     <div class="product-slider-section">
         <div class="slider-container">
+            <div id="calendar-date" class="calendar-date"></div>
+
             <div class="head-heading">
-                <h1 class="slider-header" id="pop"> Marketing & Advertising </h1>
+                <h1 class="slider-header" id="pop">Marketing</h1>
                 <a href="Marketing & Advertising-viewAll.html">
                     <p class="view-all-btn" id="pops">View all</p>
                 </a>
             </div>
+            
         </div>
 
         <div class="product-slider-wrapper" id="product-slider-wrapper22">
-            <!-- Product Cards -->
+       
 
 
 
@@ -182,13 +299,13 @@
         </div>
 
         <!-- Pagination and Arrows -->
-        <!-- <div class="pagination-controls">
+         <!-- <div class="pagination-controls">
             <button class="arrow-btn" id="prev-btn">&lt;</button>
                 <span id="pagination">1 / 7</span>
                 <button class="arrow-btn" id="next-btn">&gt;</button>
             </div> -->
-    </div>
-    </div>
+    </div>  
+   
 
 
     <!-- Hobbies and intrest  -->
@@ -203,29 +320,16 @@
         </div>
         <div class="product-slider-wrapper" id="product-slider-wrapper11">
 
-            <!-- Product Cards -->
+        
 
 
         </div>
 
-        <!-- Pagination and Arrows -->
-        <!-- <div class="pagination-controls">
-                <button class="arrow-btn" id="prev-btn">&lt;</button>
-                <span id="pagination">1 / 5</span>
-                <button class="arrow-btn" id="next-btn">&gt;</button>
-            </div> -->
+       
     </div>
-    </div>
-    <!-- <<<<<<<<<<<<------popartEnd->>>>>>>> -->
-
-    <!-- <<<<<<<<<<<<------neonwings->>>>>>>> -->
-
-
-
-    <!-- <<<<<<<<<<<<------neonwingsEnd->>>>>>>> -->
-
-    <!-- <<<<<<<<<<<<whyneonplanner>>>> -->
-    <div class="container">
+   
+  
+    <!-- <div class="container">
         <div class="row">
             <h1>Why <span>TechBro24tool?</span></h1>
             <div class="features">
@@ -275,23 +379,15 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
 
-    <!-- <<<<<<<<<<<<<<<whyneonEnd>>>>>>>>>>>> -->
-
-
-    <!-- <<<<<<<<<<<<------popart->>>>>>>> -->
-    <!-- success Home Decor  -->
-
-
-    <!-- <<<<<<<<<<<<------illusionlamps->>>>>>>> -->
+    
 
     <!-- Event And Celebrations -->
     <div class="product-slider-section">
         <div class="slider-container">
-            <!-- Succes Inspirational & Quotes" & Event & Celebrations -->
             <div class="head-heading">
                 <h1 class="slider-header">Month End Sale</h1>
                 <a href="Month End Sale-ViewAll.html">
@@ -299,26 +395,14 @@
                 </a>
             </div>
             <div class="product-slider-wrapper" id="product-slider-wrapper33">
-                <!-- Product Cards -->
-
-
             </div>
 
-            <!-- Pagination and Arrows -->
-            <!-- <div class="pagination-controls">
-                <button class="arrow-btn" id="prev-btn">&lt;</button>
-                <span id="pagination">1 / 7</span>
-                <button class="arrow-btn" id="next-btn">&gt;</button>
-            </div> -->
+          
         </div>
     </div>
-    <!-- <<<<<<<<<<<<------illusionlampsEnd->>>>>>>> -->
+   
 
-
-
-    <!-- <<<<<<<<<<<<------mostadvancedlight->>>>>>>> -->
-
-    <div class="container-fluid advance-light">
+    <!-- <div class="container-fluid advance-light">
         <div class="container">
             <div class="title">
                 World’s Most Advanced <br>
@@ -352,14 +436,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
-    <!-- <<<<<<<<<<<<------mostadvancedlightEnd->>>>>>>> -->
-
-
-
-    <!-- <<<<<<<<<<<<------exclusiveproducts->>>>>>>> -->
+  
 
 
     <!-- Costam Design -->
@@ -373,17 +453,12 @@
                 </a>
             </div>
             <div class="product-slider-wrapper" id="product-slider-wrapper44">
-                <!-- Product Cards -->
+              
 
 
             </div>
 
-            <!-- Pagination and Arrows -->
-            <!-- <div class="pagination-controls">
-                <button class="arrow-btn" id="prev-btn">&lt;</button>
-                <span id="pagination">1 / 7</span>
-                <button class="arrow-btn" id="next-btn">&gt;</button>
-            </div> -->
+          
         </div>
     </div>
 
@@ -400,12 +475,13 @@
                 </a>
             </div>
             <div class="product-slider-wrapper" id="seasonalTheame">
-                <!-- Product Cards -->
+              
 
 
             </div>
         </div>
     </div>
+    
     <!-- Inspirational & Quotes -->
     <div class="product-slider-section">
         <div class="slider-container">
@@ -416,7 +492,7 @@
                 </a>
             </div>
             <div class="product-slider-wrapper" id="inspirationalQuotes">
-                <!-- Product Cards -->
+               
 
 
             </div>
@@ -433,10 +509,11 @@
                 </a>
             </div>
             <div class="product-slider-wrapper" id="outdoorAndCommercial">
-                <!-- Product Cards -->
+              
             </div>
         </div>
     </div>
+   
     <!-- Artists & Abstract -->
     <div class="product-slider-section">
         <div class="slider-container">
@@ -447,10 +524,11 @@
                 </a>
             </div>
             <div class="product-slider-wrapper" id="artistAndAbstract">
-                <!-- Product Cards -->
+              
             </div>
         </div>
     </div>
+  
     <!-- Religious & Cultural -->
     <div class="product-slider-section">
         <div class="slider-container">
@@ -461,7 +539,7 @@
                 </a>
             </div>
             <div class="product-slider-wrapper" id="ReligiousCultural">
-                <!-- Product Cards -->
+             
             </div>
         </div>
     </div>
@@ -470,104 +548,101 @@
 
     <!-- <<<<<<<<<<<<------exclusiveproductsend->>>>>>>> -->
     <!-- <<<<<<<<<<<footer >>>>>>>>>>>> -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="section-footer">
-                    <div class="row">
-                        <div class="col-sm-12 d-flex">
-                            <div class="col-sm-3 f-points">
-                                <h3>Useful Links</h3>
-                                <div class="links">
-                                    <ul class="menu">
-                                        <li>Home</li>
-                                        <li>Customize</li>
-                                        <li>Contact Us</li>
-
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-sm-3 f-points">
-                                    <h3>Make Posts</h3>
-                                    <div class="links">
-                                        <ul class="menu">
-                                            <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
-                                            <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
-                                            <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
-                                            <li><a href="#inspirationalQuotes">Month End Offer</a></li>
-                                            <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
-                                            <li><a href="#seasonalTheame">Weekend Offers</a></li>
-                                            <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
-                                            <li><a href="#artistAndAbstract">Business Anniversary</a></li>
-                                            <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3">
-                                <div class="col-sm-3 f-points">
-                                    <h3>Top Services</h3>
-                                    <div class="links">
-                                        <ul class="menu">
-                                            <li>Best Seller Products </li>
-
-                                            <li> Exclusive Products</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-sm-3 secution">
-                                <img src="./img/logo_techbro-removebg-preview.png" alt="">
-                                <div class="fsocial">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com" target="_blank" aria-label="Facebook">
-                                                <i class="fab fa-facebook-f"></i>
-                                            </a>
-                                        </li>
-                                        <li> <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">
-                                                <i class="fab fa-instagram"></i>
-                                            </a>
-                                        </li>
-                                        <li> <a href="https://www.linkedin.com" target="_blank" aria-label="LinkedIn">
-                                                <i class="fab fa-linkedin-in"></i>
-                                            </a></li>
-                                        <li><a href="https://www.youtube.com" target="_blank" aria-label="YouTube">
-                                                <i class="fab fa-youtube"></i>
-                                            </a></li>
-                                    </ul>
-                                </div>
-                                <div class="contactus">
-                                    <p><i class="fas fa-phone me-2 text-teal"></i> <a href="tel:+917597722920">+917597722920</a></p>
-                                  <p><i class="fas fa-envelope me-2 text-teal"></i> <a href="mailto:info@techbro24.com">info@techbro24.com</a></p>
-                                </div>
-                            </div>
+        <footer class="custom-footer">
+            <div class="footer-container">
+                <div class="footer-row">
+                    <!-- Useful Links Section -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Useful Links</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Customize</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <!-- Make Posts Section -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Make Posts</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#product-slider-wrapper22">Marketing & Advertising</a></li>
+                            <li><a href="#product-slider-wrapper11">Business Instagram Story</a></li>
+                            <li><a href="#product-slider-wrapper33">Month End Sale</a></li>
+                            <li><a href="#inspirationalQuotes">Month End Offer</a></li>
+                            <li><a href="#product-slider-wrapper44">Creative Collection</a></li>
+                            <li><a href="#seasonalTheame">Weekend Offers</a></li>
+                            <li><a href="#outdoorAndCommercial">Weekend Offer</a></li>
+                            <li><a href="#artistAndAbstract">Business Anniversary</a></li>
+                            <li><a href="#ReligiousCultural">Super Scale Banner</a></li>
+                        </ul>
+                    </div>
+                    <!-- Top Services Section -->
+                    <div class="footer-col">
+                        <h3 class="footer-heading">Top Services</h3>
+                        <ul class="footer-menu">
+                            <li><a href="#">Best Seller Products</a></li>
+                            <li><a href="#">Exclusive Products</a></li>
+                        </ul>
+                    </div>
+                    <!-- Contact & Social Section -->
+                    <div class="footer-col">
+                        <img src="./img/logo_techbro-removebg-preview.png" alt="TechBro24 Logo" class="footer-logo">
+                        <ul class="social-links">
+                            <li><a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                            <li><a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                        <div class="footer-contact">
+                            <p><i class="fas fa-phone"></i> <a href="tel:+917597722920">+91 75977 22920</a></p>
+                            <p><i class="fas fa-envelope"></i> <a href="mailto:info@techbro24.com">info@techbro24.com</a></p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
-    <div class="container">
-        <div class="row">
-            <div class="footer-end">
-                <p>Copyright ©
-                    <label for="" class="Footer-span">2025</label>
-                    <!-- <b>Neon Planet</b> -->
-                    . All Rights Reserved. | Design and Developed By
+            <div class="footer-bottom">
+                <p>Copyright © <span class="footer-year">2025</span> <b>Techbro24</b>. All Rights Reserved. | Designed and Developed by 
                     <a href="https://www.techbro24.com/" target="_blank">TechBro24</a>
                 </p>
             </div>
-        </div>
+        </footer>
+   <!-- <<<<<<<<<<<<<<<<<footer>>>>>>>>>>>>>>>>>> -->
 
-    </div>
-    <!-- <<<<<<<<<<<footerEnd >>>>>>>>>>>> -->
-
+    <script>
+      function filterTemplates() {
+        // Get the input value and convert it to lowercase
+        const input = document.getElementById('searchInput').value.toLowerCase();
+        const templateItems = document.querySelectorAll('.template-item');
+    
+        // Loop through all template items
+        templateItems.forEach(item => {
+          // If the item's text includes the search input, show it; otherwise, hide it
+          if (item.textContent.toLowerCase().includes(input)) {
+            item.style.display = "block";
+          } else {
+            item.style.display = "none";
+          }
+        });
+      }
+    </script>
+    
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+    const cards = document.querySelectorAll(".festival-card");
+  
+    cards.forEach(card => {
+      card.addEventListener("click", () => {
+        const id = card.getAttribute("id");
+        if (!id) return console.log("❌ No data-id found!");
+  
+        // Redirect to detail page with ID
+        window.location.href = `Detail-page.html?id=${id}`;
+      });
+    });
+  });
+  </script>
+      
 
     <script src="./script.js">
- 
-
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
 
