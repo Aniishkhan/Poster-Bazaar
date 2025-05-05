@@ -158,6 +158,7 @@
   .product-card img,
   .festival-card img {
     height: 200px ;
+    border-radius: 10px;
   }
   .trusted-section h2,
   .festival-heading h1,
@@ -172,7 +173,7 @@
   .hero-content .tagline {
     text-align: left;
   }
-  .product-card,
+
   .festival-card {
     width: 100%;
   }
